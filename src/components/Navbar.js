@@ -1,41 +1,51 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
-
-const Navbar = () => (
-  <nav className="navbar is-transparent">
+const Navbar = ({ title, links }) => (
+  <nav className="navbar is-transparent is-fixed-top has-bottom-border">
     <div className="container">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
-          <figure className="image">
-            <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-          </figure>
+          {title}
         </Link>
       </div>
+      
       <div className="navbar-start">
-        <Link className="navbar-item" to="/about">
-          About
-        </Link>
-        <Link className="navbar-item" to="/products">
-          Products
-        </Link>
+        {
+          links.map((link, index) => (
+            <Link key={`nav-${index}`} 
+              className="navbar-item is-capitalized" 
+              to={link.path}>
+              {link.path}
+            </Link>
+          ))
+        }
       </div>
+
       <div className="navbar-end">
-        <a
-          className="navbar-item"
-          href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className="icon">
-            <img src={github} alt="Github" />
-          </span>
-        </a>
+        <div className="field has-addons has-padding">
+          <div className="control">
+            <input className="input" type="text" placeholder="Search"/>
+          </div>
+
+          <div className="control">
+            <a className="button is-danger">
+              Search
+            </a>
+          </div>
+        
+        </div>
       </div>
     </div>
   </nav>
 )
 
 export default Navbar
+
+
+Navbar.propTypes = {
+  title: PropTypes.string,
+  links: PropTypes.array
+}
+

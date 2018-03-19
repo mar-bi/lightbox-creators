@@ -1,13 +1,31 @@
 @import "~bulma/sass/utilities/initial-variables"
 
-// Config vars
-$kaldi-red: #FD461E
-$kaldi-red-invert: #fff
+//own initial variables
+$palegold: #c0b283
+$silk: #dcd0c0
+$paper: #f4f4f4
+$charcoal: #373737
+$tangerine: #e37222
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
+// the derived variables
+// Use the new pink as the primary color
+$primary: $palegold
+$info: $paper
+$warning: $silk
+$success: $charcoal
+$danger: $tangerine
+$dark: $charcoal
+$text: $charcoal
+
+$link: $tangerine
+$link-invert: $paper
+$footer-background-color: $silk
+
 
 // Helper Classes
+html
+  margin-top: 52px !important
+
 .full-width-image-container
   width: 100vw
   height: 400px
@@ -23,5 +41,17 @@ $primary-invert: $kaldi-red-invert
 
 .margin-top-0
   margin-top: 0 !important
+
+.has-padding
+  padding: 0.5rem;
+
+.has-bottom-border
+  border-bottom: 1px solid $palegold
+
+.footer
+  padding: 2rem !important
+
+
+
 
 @import "~bulma"

@@ -1,6 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Company',
+    navLinks: [ 
+      {path:'about', name:'about'}, 
+      {path: 'product1', name: 'product1'},
+      {path: 'product2', name: 'product2'},
+      {path: 'product3', name: 'product3'},
+      {path:'contact', name: 'contact us'}
+    ]
   },
   plugins: [
     'gatsby-plugin-react-helmet',
