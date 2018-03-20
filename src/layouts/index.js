@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import './all.sass'
+import './all.scss'
 
 
 const TemplateWrapper = ({ children, data }) => (
@@ -14,7 +14,7 @@ const TemplateWrapper = ({ children, data }) => (
       title={data.site.siteMetadata.title}
       links={data.site.siteMetadata.navLinks}
     />
-    <div>{children()}</div>
+    <div id="wrapper">{children()}</div>
     <Footer />
   </div>
 )

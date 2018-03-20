@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Hero from '../components/Hero'
 import CityNight from '../img/city-night.jpg'
@@ -10,7 +11,13 @@ export default class IndexPage extends React.Component {
 
     return (
       <div>
-        <Hero image={CityNight} size="large"/>
+        <Hero 
+          image={CityNight} 
+          size="large" 
+          title="Company" 
+          subtitle="We decorate everything!"
+          layer
+        />
         <section className="section">
           <div className="container">
             <div className="content">
@@ -25,7 +32,7 @@ export default class IndexPage extends React.Component {
                   key={post.id}
                 >
                   <p>
-                    <Link className="has-text-primary" to={post.fields.slug}>
+                    <Link className="has-text-danger" to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
                     <span> &bull; </span>
@@ -68,3 +75,7 @@ export const pageQuery = graphql`
     }
   }
 `
+
+IndexPage.propTypes = {
+  data: PropTypes.object
+}

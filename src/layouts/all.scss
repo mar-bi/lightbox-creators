@@ -1,0 +1,96 @@
+@import "~bulma/sass/utilities/initial-variables";
+
+//own initial variables
+$palegold: #c0b283;
+$silk: #dcd0c0;
+$paper: #f4f4f4;
+$charcoal: #373737;
+$tangerine: #e37222;
+
+
+// the derived variables
+$primary: $palegold;
+$info: $paper;
+$warning: $silk;
+$danger: $tangerine;
+$dark: $charcoal;
+$link: $tangerine;
+$footer-background-color: $charcoal;
+
+
+// Helper Classes
+html {
+  margin-top: 52px !important;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#wrapper {
+  flex: 1 0 auto;
+  margin-bottom: 52px;
+}
+
+.full-width-image-container {
+  width: 100vw;
+  height: 400px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: 5em -50vw;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.margin-top-0 {
+  margin-top: 0 !important; 
+}
+
+.has-padding {
+  padding: 0.5rem;
+}
+
+.has-bottom-border {
+  border-bottom: 1px solid $palegold;
+}
+
+.footer {
+  padding: 1.5rem !important;
+  flex-shrink: 0;
+}
+
+#made-by {
+  text-decoration: none;
+  color: $tangerine;
+  &:hover {
+    color: darken($palegold, 5%);
+  }
+
+}
+
+.hero-text-container {
+  display: inline-block;
+  padding: 1.5rem 1rem;
+  background-color: rgba(220, 108, 28,.55);
+  border-radius: 4px;
+}
+
+
+.contact-page {
+  img {
+    display: block;
+  }
+}
+
+
+
+
+
+@import "~bulma"

@@ -6,7 +6,7 @@ module.exports = {
       {path: 'product1', name: 'product1'},
       {path: 'product2', name: 'product2'},
       {path: 'product3', name: 'product3'},
-      {path:'contact', name: 'contact us'}
+      {path:'contacts', name: 'contact us'}
     ]
   },
   plugins: [
