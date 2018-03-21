@@ -2,16 +2,8 @@
 templateKey: 'contacts-page'
 path: /contacts
 title: Our contacts
-mapSrc: '/img/sample-map.png'
-mapAlt: 'our location'
+image: /img/sample-map.png
+address: Egypt, Red Sea, Hurghada
+phone: 123-456-789
+email: company@company.com
 ---
-### Address
-Egypt
-Red Sea
-Hurghada
-
-### Phone
-123-456-789
-
-### Email
-company@company.com

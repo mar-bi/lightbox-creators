@@ -1,19 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Content, { HTMLContent } from '../components/Content'
 import Hero from '../components/Hero'
 import GoldenLight from '../img/golden-light.jpg'
 
 
 export const ContactPageTemplate = ({
   title, 
-  content, 
-  contentComponent, 
-  mapAlt, 
-  mapSrc
+  image,
+  address,
+  phone,
+  email
 }) => {
-  const PageContent = contentComponent || Content
-  
+    
   return (
     <div>
       <Hero image={GoldenLight} size="medium" title={title}/>
@@ -21,11 +19,18 @@ export const ContactPageTemplate = ({
         <div className="container">
           <div className="columns">
             <div className="column is-5 is-offset-1">
-              <PageContent className="content contact-page" content={content} />
+              <div className="content">
+                <h3 className="has-text-weight-semibold">Address</h3>
+                <h4>{address}</h4>
+                <h3 className="has-text-weight-semibold">Phone</h3>
+                <h4>{phone}</h4>
+                <h3 className="has-text-weight-semibold">Email</h3>
+                <h4>{email}</h4>
+              </div>
             </div>
             <div className="column is-5">
               <figure className="image is-square">
-                <img src={mapSrc} alt={mapAlt}/>
+                <img src={image} alt="our location"/>
               </figure>
             </div>
           </div>
@@ -37,10 +42,11 @@ export const ContactPageTemplate = ({
 
 ContactPageTemplate.propTypes = {
   title: PropTypes.string,
-  content: PropTypes.string,
   contentComponent: PropTypes.string,
-  mapSrc: PropTypes.string,
-  mapAlt: PropTypes.string
+  image: PropTypes.string,
+  address: PropTypes.string,
+  phone: PropTypes.string, 
+  email: PropTypes.string
 }
 
 export default ({ data }) => {
@@ -48,11 +54,11 @@ export default ({ data }) => {
 
   return (
     <ContactPageTemplate
-      contentComponent={HTMLContent}
       title={post.frontmatter.title}
-      mapSrc={post.frontmatter.mapSrc}
-      mapAlt={post.frontmatter.mapAlt}
-      content={post.html}
+      image={post.frontmatter.image}
+      address={post.frontmatter.address}
+      phone={post.frontmatter.phone}
+      email={post.frontmatter.email}
     />  
   )
 }
@@ -60,11 +66,12 @@ export default ({ data }) => {
 export const contactPageQuery = graphql`
   query ContactPage($id: String!) {
     markdownRemark(id: {eq: $id }) {
-      html
       frontmatter {
         title
-        mapSrc
-        mapAlt
+        image
+        address
+        phone
+        email
       }
     }
   }

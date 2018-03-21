@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Footer = () => (
-  <div className="container-fluid">
+  <div className="container">
     <div className="footer is-fixed-bottom">
       <div className="content has-text-centered">
         <p className="has-text-warning">Add company contacts</p>
