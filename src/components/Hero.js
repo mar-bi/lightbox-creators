@@ -2,15 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Hero = ({ image, size, title, subtitle, layer }) => (
-  <section className={`hero is-${size}`} style={{ backgroundImage: `url(${image})`}}>
+  <section
+    className={`hero is-${size}`}
+    style={{ backgroundImage: `url(${image})` }}
+  >
     <div className="hero-body">
       <div className="container">
-        <div className={layer? 'hero-text-container': ''}>
+        <div className={layer ? 'hero-text-container' : ''}>
           <h1 className="title has-text-info is-size-1-widescreen">
-            { title || ''}
+            {title || ''}
           </h1>
           <h2 className="subtitle has-text-warning is-size-3-widescreen">
-            { subtitle || ''}
+            {subtitle || ''}
           </h2>
         </div>
       </div>
@@ -23,7 +26,7 @@ Hero.propTypes = {
   size: PropTypes.string,
   title: PropTypes.string,
   subtitle: PropTypes.string,
-  layer: PropTypes.bool
+  layer: PropTypes.bool,
 }
 
 export default Hero

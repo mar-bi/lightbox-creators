@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Icon = ({ viewbox, size, color, icon}) => (
+const Icon = ({ viewbox, size, color, icon }) => (
   <svg
     className="svg-icon"
     viewBox={viewbox}
@@ -9,22 +9,21 @@ const Icon = ({ viewbox, size, color, icon}) => (
     height={size}
     preserveAspectRatio="xMidYMid meet"
   >
-    <path d={icon} fill={color}/>
+    <path d={icon} fill={color} />
   </svg>
 )
 
 export default Icon
 
-
 Icon.propTypes = {
   icon: PropTypes.string.isRequired,
   color: PropTypes.string,
   size: PropTypes.number,
-  viewbox: PropTypes.string
+  viewbox: PropTypes.string,
 }
 
 Icon.defaultProps = {
   size: 36,
   viewbox: '0 0 32 32',
-  color: '#dcd0c0'
+  color: '#dcd0c0',
 }

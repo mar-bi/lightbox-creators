@@ -3,18 +3,16 @@ import PropTypes from 'prop-types'
 import Hero from '../components/Hero'
 import GoldenLight from '../img/golden-light.jpg'
 
-
 export const ContactPageTemplate = ({
-  title, 
+  title,
   image,
   address,
   phone,
-  email
+  email,
 }) => {
-    
   return (
     <div>
-      <Hero image={GoldenLight} size="medium" title={title}/>
+      <Hero image={GoldenLight} size="medium" title={title} />
       <section className="section">
         <div className="container">
           <div className="columns">
@@ -30,12 +28,12 @@ export const ContactPageTemplate = ({
             </div>
             <div className="column is-5">
               <figure className="image is-square">
-                <img src={image} alt="our location"/>
+                <img src={image} alt="our location" />
               </figure>
             </div>
           </div>
         </div>
-      </section> 
+      </section>
     </div>
   )
 }
@@ -45,8 +43,8 @@ ContactPageTemplate.propTypes = {
   contentComponent: PropTypes.string,
   image: PropTypes.string,
   address: PropTypes.string,
-  phone: PropTypes.string, 
-  email: PropTypes.string
+  phone: PropTypes.string,
+  email: PropTypes.string,
 }
 
 export default ({ data }) => {
@@ -59,13 +57,13 @@ export default ({ data }) => {
       address={post.frontmatter.address}
       phone={post.frontmatter.phone}
       email={post.frontmatter.email}
-    />  
+    />
   )
 }
 
 export const contactPageQuery = graphql`
   query ContactPage($id: String!) {
-    markdownRemark(id: {eq: $id }) {
+    markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
         image

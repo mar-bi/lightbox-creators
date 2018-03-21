@@ -11,17 +11,19 @@ export default class IndexPage extends React.Component {
 
     return (
       <div>
-        <Hero 
-          image={CityNight} 
-          size="large" 
-          title="Company" 
+        <Hero
+          image={CityNight}
+          size="large"
+          title="Company"
           subtitle="We decorate everything!"
           layer
         />
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">Latest Projects</h1>
+              <h1 className="has-text-weight-bold is-size-2">
+                Latest Projects
+              </h1>
             </div>
             {posts
               .filter(post => post.node.frontmatter.templateKey === 'blog-post')
@@ -50,7 +52,7 @@ export default class IndexPage extends React.Component {
               ))}
           </div>
         </section>
-      </div>  
+      </div>
     )
   }
 }
@@ -77,5 +79,5 @@ export const pageQuery = graphql`
 `
 
 IndexPage.propTypes = {
-  data: PropTypes.object
+  data: PropTypes.object,
 }
