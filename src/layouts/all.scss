@@ -61,10 +61,65 @@ body {
   border-bottom: 1px solid $palegold;
 }
 
+.has-right-border {
+  border-right: 1px dotted lighten($charcoal, 15%);
+  @media screen and (max-width: 768px) {
+    border-right: none;
+    border-bottom: 1px dotted lighten($charcoal, 15%);
+  }  
+}
+
 .footer {
   padding: 1.5rem !important;
   flex-shrink: 0;
 }
+
+.footer-menu {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start; 
+  max-height: 100px;
+  @media screen and (max-width: 768px) {
+    align-items: center; 
+  }
+}
+
+.footer-menu-item {
+  display: inline-block;
+  font-size: 0.9rem;
+  a {
+    color: $silk !important;
+    &:hover {
+      background-color: $charcoal !important;
+      color: $tangerine !important;
+    }
+    @media screen and (min-width: 769px) and (max-width: 840px) {
+      padding: 0.5rem !important;
+    }
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 840px) {
+    font-size: 0.8rem;
+  }
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1em;
+}
+
+.svg-icon {
+  cursor: pointer;
+  &:hover {
+    path {
+      fill: $tangerine;
+    }
+  }
+}
+
 
 #made-by {
   text-decoration: none;

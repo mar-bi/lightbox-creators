@@ -15,7 +15,10 @@ const TemplateWrapper = ({ children, data }) => (
       links={data.site.siteMetadata.navLinks}
     />
     <div id="wrapper">{children()}</div>
-    <Footer />
+    <Footer 
+      links={data.site.siteMetadata.navLinks}
+      data={data.dataJson}
+    />
   </div>
 )
 
@@ -28,16 +31,26 @@ export default TemplateWrapper
 
 
 export const query = graphql`
-	query LayoutQuery {
-		site {
-			siteMetadata {
-				title
-				navLinks {
-					path
-					name
-				}
-			}
-		}
-	}
+  query LayoutQuery {
+    site {
+      siteMetadata {
+        title
+        navLinks {
+          path
+          name
+        }
+      }
+    }
+    dataJson(type: {eq: "company"}){
+      companyName
+      address
+      email
+      phone
+      email
+      facebook
+      twitter
+      instagram
+    }
+  }
 `
 
