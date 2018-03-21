@@ -52,3 +52,19 @@ collections:
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
+
+  - name: "other-data"
+    label: "Other Data"
+    files:
+      - file: "src/data/company-data.json"
+        label: "Company data"
+        name: "company-data"
+        fields:
+          - {label: "Data type", name: "type", widget: "hidden", default: "company-data"}
+          - {label: "Company name", name: "companyName", widget: "string"}
+          - {label: "Address", name: "address", widget: "string"}
+          - {label: "Phone", name: "phone", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Facebook", name: "facebook", widget: "string"}
+          - {label: "Twitter", name: "twitter", widget: "string"}
+          - {label: "Instagram", name: "instagram", widget: "string"}
