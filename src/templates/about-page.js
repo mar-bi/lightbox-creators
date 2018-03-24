@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 import Hero from '../components/Hero'
 import OpenLightbox from '../img/open-lightbox.jpg'
-import OpenSign from '../img/open-sign.jpg'
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
