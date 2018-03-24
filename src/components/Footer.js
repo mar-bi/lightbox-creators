@@ -30,7 +30,7 @@ const Footer = ({ links, data }) => (
               <Icon icon={ICONS.MAIL} viewbox="0 0 28 28" />
             </a>
             <a href={data.facebook}>
-              <Icon icon={ICONS.FACEBOOK} size="32" />
+              <Icon icon={ICONS.FACEBOOK} size={32} />
             </a>
             <a href={data.instagram}>
               <Icon icon={ICONS.INSTAGRAM} viewbox="0 0 28 28" />

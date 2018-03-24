@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 
 export const BlogPostTemplate = ({
@@ -16,11 +17,14 @@ export const BlogPostTemplate = ({
       {helmet || ''}
       <div className="container content">
         <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+          <div className="column is-10 is-offset-1" dir="rtl">
+            <h1
+              className="title is-size-2 has-text-weight-bold is-bold-light"
+              dir="rtl"
+            >
               {title}
             </h1>
-            <p>{description}</p>
+            <p dir="rtl">{description}</p>
             <PostContent content={content} />
           </div>
         </div>
@@ -56,3 +60,11 @@ export const pageQuery = graphql`
     }
   }
 `
+
+BlogPostTemplate.propTypes = {
+  content: PropTypes.string,
+  contentComponent: PropTypes.func,
+  description: PropTypes.string,
+  title: PropTypes.string,
+  helmet: PropTypes.object,
+}

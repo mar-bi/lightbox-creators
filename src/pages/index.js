@@ -8,6 +8,10 @@ export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
+    const rtlDate = dateStr => {
+      const unixTime = new Date(dateStr)
+      return unixTime.toLocaleDateString('ar-EG')
+    }
 
     return (
       <div>
@@ -30,7 +34,7 @@ export default class IndexPage extends React.Component {
               .map(({ node: post }) => (
                 <div
                   className="content"
-                  style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+                  style={{ border: '1px solid #c0b283', padding: '2em 4em' }}
                   key={post.id}
                 >
                   <p>
@@ -38,13 +42,18 @@ export default class IndexPage extends React.Component {
                       {post.frontmatter.title}
                     </Link>
                     <span> &bull; </span>
-                    <small>{post.frontmatter.date}</small>
+                    <small className="has-text-dark" dir="rtl">
+                      {rtlDate(post.frontmatter.date)}
+                    </small>
                   </p>
                   <p>
-                    {post.excerpt}
+                    {post.frontmatter.description}
                     <br />
                     <br />
-                    <Link className="button is-small" to={post.fields.slug}>
+                    <Link
+                      className="button is-small is-danger is-outlined"
+                      to={post.fields.slug}
+                    >
                       Keep Reading →
                     </Link>
                   </p>
@@ -62,7 +71,6 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
-          excerpt(pruneLength: 400)
           id
           fields {
             slug
@@ -70,7 +78,8 @@ export const pageQuery = graphql`
           frontmatter {
             title
             templateKey
-            date(formatString: "MMMM DD, YYYY")
+            date
+            description
           }
         }
       }
