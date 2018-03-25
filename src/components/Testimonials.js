@@ -8,7 +8,7 @@ const Testimonials = ({ testimonials }) => (
         <div className="message-body">
           {testimonial.quote}
           <br />
-          <cite> – {testimonial.author}</cite>
+          <cite className="has-text-weight-bold"> – {testimonial.author}</cite>
         </div>
       </article>
     ))}
