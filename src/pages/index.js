@@ -37,7 +37,7 @@ export default class IndexPage extends React.Component {
                   style={{ border: '1px solid #c0b283', padding: '2em 4em' }}
                   key={post.id}
                 >
-                  <p>
+                  <p dir="rtl">
                     <Link className="has-text-danger" to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
@@ -46,7 +46,7 @@ export default class IndexPage extends React.Component {
                       {rtlDate(post.frontmatter.date)}
                     </small>
                   </p>
-                  <p>
+                  <p dir="rtl">
                     {post.frontmatter.description}
                     <br />
                     <br />
