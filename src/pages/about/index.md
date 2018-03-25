@@ -1,7 +1,7 @@
 ---
 templateKey: 'about-page'
 path: /about
-title: About our values
+title: عن الشركة
 ---
 <h3 dir="rtl"> لكن لا بد أن أوضح لك أن كل</h3>
 <p dir="rtl">

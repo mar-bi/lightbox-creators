@@ -1,8 +1,8 @@
 ---
 templateKey: 'product-page'
-path: /product3
-title: Nice product 3
-image: /img/door.jpg
+path: /indoor
+title: تشطيبات
+image: /img/chair.jpg
 heading: What we offer
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their

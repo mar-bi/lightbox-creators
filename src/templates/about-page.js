@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 import Hero from '../components/Hero'
-import OpenLightbox from '../img/open-lightbox.jpg'
+import Door from '../img/door.jpg'
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -10,11 +10,10 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   return (
     <div>
       <Hero
-        image={OpenLightbox}
+        image={Door}
         size="medium"
         title={title}
         layer
-        layerColor="rgba(196, 71, 82, 0.5)"
       />
       <section className="section section--gradient">
         <div className="container">

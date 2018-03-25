@@ -10,6 +10,7 @@ const Hero = ({ image, size, title, subtitle, layer, layerColor }) => (
       backgroundSize: 'cover',
       backgroundPosition: 'center',
     }}
+    dir="rtl"
   >
     <div className="hero-body">
       <div className="container">

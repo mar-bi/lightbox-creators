@@ -20,11 +20,12 @@ const Navbar = ({ title, links }) => {
       className="navbar is-transparent is-fixed-top"
       role="navigation"
       aria-label="main navigation"
+      dir="rtl"
     >
       <div className="container has-bottom-border">
         {/* brand navbar */}
-        <div className="navbar-brand">
-          <Link to="/" className="navbar-item">
+        <div className="navbar-brand" dir="rtl">
+          <Link to="/" className="navbar-item is-size-2">
             {title}
           </Link>
 
@@ -42,14 +43,14 @@ const Navbar = ({ title, links }) => {
 
         {/* desktop navigation */}
         <div className="navbar-menu" id="navMenu">
-          <div className="navbar-start">
+          <div className="navbar-start" dir="rtl">
             {links.map((link, index) => (
               <Link
                 key={`nav-${index}`}
-                className="navbar-item is-capitalized"
+                className="navbar-item is-capitalized is-size-4"
                 to={link.path}
               >
-                {link.path}
+                {link.name}
               </Link>
             ))}
           </div>
@@ -57,11 +58,11 @@ const Navbar = ({ title, links }) => {
           <div className="navbar-end">
             <div className="field has-addons has-padding">
               <div className="control">
-                <input className="input" type="text" placeholder="Search" />
+                <input className="input is-size-5" type="text" placeholder="بحث" />
               </div>
 
               <div className="control">
-                <a className="button is-danger">Search</a>
+                <a className="button is-danger is-size-5">بحث</a>
               </div>
             </div>
           </div>

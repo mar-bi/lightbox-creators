@@ -12,18 +12,18 @@ export const ContactPageTemplate = ({
 }) => {
   return (
     <div>
-      <Hero image={GoldenLight} size="medium" title={title} />
+      <Hero image={GoldenLight} size="medium" title={title} layer/>
       <section className="section">
         <div className="container">
           <div className="columns">
             <div className="column is-5 is-offset-1">
               <div className="content">
-                <h3 className="has-text-weight-semibold">Address</h3>
-                <h4>{address}</h4>
-                <h3 className="has-text-weight-semibold">Phone</h3>
-                <h4>{phone}</h4>
-                <h3 className="has-text-weight-semibold">Email</h3>
-                <h4>{email}</h4>
+                <h3 className="has-text-weight-semibold is-size-3">العنوان</h3>
+                <h4 className="is-size-4">{address}</h4>
+                <h3 className="has-text-weight-semibold is-size-3">تليفون</h3>
+                <h4 className="is-size-4">{phone}</h4>
+                <h3 className="has-text-weight-semibold is-size-3">بريد اليكترونى</h3>
+                <h4 className="is-size-4">{email}</h4>
               </div>
             </div>
             <div className="column is-5">

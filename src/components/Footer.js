@@ -9,7 +9,7 @@ const FooterNav = ({ links }) => (
     {links.map((link, index) => (
       <li key={`footer-nav-${index}`} className="footer-menu-item">
         <Link className="navbar-item is-capitalized" to={link.path}>
-          {link.path}
+          {link.name}
         </Link>
       </li>
     ))}
@@ -43,14 +43,14 @@ const Footer = ({ links, data }) => (
 
         <div className="column is-one-third-tablet">
           <div className="content has-text-centered">
-            <p className="has-text-warning">
-              <span className="is-capitalized">{data.companyName}</span>
+            <p className="has-text-warning is-size-6">
               {','}
+              <span className="is-capitalized" dir="rtl">{data.companyName}</span>
               <br />
               {data.phone}
               {','}
               <br />
-              {data.address}
+              <span dir="rtl">{data.address}</span>
             </p>
             <p className="is-size-7 has-text-info">
               made by{' '}

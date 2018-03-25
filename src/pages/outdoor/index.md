@@ -1,7 +1,7 @@
 ---
 templateKey: 'product-page'
-path: /product1
-title: Nice product 1
+path: /outdoor
+title: واجهات
 image: /img/house.jpg
 heading: الألم الذي ربما تنجم عنه بعض
 description: >-

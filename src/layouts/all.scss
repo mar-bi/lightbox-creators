@@ -1,4 +1,5 @@
 @import "~bulma/sass/utilities/initial-variables";
+@import url('https://fonts.googleapis.com/css?family=Lateef');
 
 //own initial variables
 $palegold: #c0b283;
@@ -16,7 +17,8 @@ $danger: $tangerine;
 $dark: $charcoal;
 $link: $tangerine;
 $footer-background-color: $charcoal;
-
+$body-family: 'Lateef', cursive;
+$body-size: 18px;
 
 // Helper Classes
 html {
@@ -87,7 +89,7 @@ body {
 
 .footer-menu-item {
   display: inline-block;
-  font-size: 0.9rem;
+  font-size: 1.125rem;
   a {
     color: $silk !important;
     &:hover {

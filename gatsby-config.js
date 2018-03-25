@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: 'Company',
+    title: 'الفهد للديكور والتشطيبات',
     navLinks: [
-      { path: 'about', name: 'about' },
-      { path: 'product1', name: 'product1' },
-      { path: 'product2', name: 'product2' },
-      { path: 'product3', name: 'product3' },
-      { path: 'contacts', name: 'contact us' },
+      { path: 'about', name: 'عن الشركة' },
+      { path: 'outdoor', name: 'واجهات' },
+      { path: 'indoor', name: 'تشطيبات' },
+      { path: 'electrical', name: 'اعمال كهرباء' },
+      { path: 'contacts', name: 'اتصل بنا' },
     ],
   },
   plugins: [

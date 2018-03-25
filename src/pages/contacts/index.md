@@ -1,9 +1,9 @@
 ---
 templateKey: 'contacts-page'
 path: /contacts
-title: Our contacts
+title: اتصل بنا
 image: /img/sample-map.png
-address: Egypt, Red Sea, Hurghada
-phone: 123-456-789
+address: جمهورية مصر العربيه القاهرة
+phone: (+2) 010038110617
 email: company@company.com
 ---

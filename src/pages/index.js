@@ -18,16 +18,16 @@ export default class IndexPage extends React.Component {
         <Hero
           image={CityNight}
           size="large"
-          title="Company"
-          subtitle="We decorate everything!"
+          title="الفهد للديكور والتشطيبات"
+          subtitle=""
           layer
         />
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">
-                Latest Projects
-              </h1>
+              <h2 className="has-text-weight-bold is-size-1" dir="rtl">
+                الأخبار
+              </h2>
             </div>
             {posts
               .filter(post => post.node.frontmatter.templateKey === 'blog-post')
@@ -37,7 +37,7 @@ export default class IndexPage extends React.Component {
                   style={{ border: '1px solid #c0b283', padding: '2em 4em' }}
                   key={post.id}
                 >
-                  <p dir="rtl">
+                  <p dir="rtl" className="is-size-4">
                     <Link className="has-text-danger" to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
@@ -46,15 +46,16 @@ export default class IndexPage extends React.Component {
                       {rtlDate(post.frontmatter.date)}
                     </small>
                   </p>
-                  <p dir="rtl">
+                  <p dir="rtl" className="is-size-5">
                     {post.frontmatter.description}
                     <br />
                     <br />
                     <Link
-                      className="button is-small is-danger is-outlined"
+                      className="button is-small is-danger is-outlined is-size-5 has-text-weight-semibold"
                       to={post.fields.slug}
+                      dir="rtl"
                     >
-                      Keep Reading →
+                      استمرار
                     </Link>
                   </p>
                 </div>

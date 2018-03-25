@@ -13,7 +13,6 @@ export const ProductPageTemplate = ({
   intro,
   main,
   testimonials,
-  fullImage,
 }) => (
   <div>
     <Hero
