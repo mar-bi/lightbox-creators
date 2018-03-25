@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
@@ -19,7 +20,7 @@ export const ProductPageTemplate = ({
       <div className="section">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <div className="content">
+            <div className="content" dir="rtl">
               <div
                 className="full-width-image-container margin-top-0"
                 style={{ backgroundImage: `url(${image})` }}
@@ -44,7 +45,9 @@ export const ProductPageTemplate = ({
                   <p>{description}</p>
                 </div>
               </div>
+
               <Features gridItems={intro.blurbs} />
+              
               <div className="columns">
                 <div className="column is-7">
                   <h3 className="has-text-weight-semibold is-size-3">

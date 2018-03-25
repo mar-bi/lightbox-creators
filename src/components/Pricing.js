@@ -1,9 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-export default ({ data }) => (
+const Pricing = ({ data }) => (
   <div className="columns">
     {data.map(price => (
-      <div key={price.plan} className="column">
+      <div key={price.plan} className="column" dir="rtl">
         <section className="section">
           <h4 className="has-text-centered has-text-weight-semibold">
             {price.plan}
@@ -24,3 +25,10 @@ export default ({ data }) => (
     ))}
   </div>
 )
+
+export default Pricing
+
+
+Pricing.propTypes = {
+  data: PropTypes.array
+}
