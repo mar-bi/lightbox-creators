@@ -19,12 +19,26 @@ const FooterNav = ({ links }) => (
 const Footer = ({ links, data }) => (
   <div className="container">
     <div className="footer is-fixed-bottom">
-      <div className="columns">
+      <div className="columns" dir="rtl">
         <div className="column is-one-third-tablet has-right-border">
           <FooterNav links={links} />
         </div>
 
         <div className="column is-one-third-tablet has-right-border">
+          <div className="content has-text-centered">
+            <p className="has-text-warning is-size-5" dir="ltr">
+              {','}
+              <span className="is-capitalized" dir="rtl">{data.companyName}</span>
+              <br />
+              {data.phone}
+              {','}
+              <br />
+              <span dir="rtl">{data.address}</span>
+            </p>
+          </div>
+        </div>
+
+        <div className="column is-one-third-tablet">
           <div className="icon-container">
             <a href={`mailto:${data.email}`}>
               <Icon icon={ICONS.MAIL} viewbox="0 0 28 28" />
@@ -39,27 +53,13 @@ const Footer = ({ links, data }) => (
               <Icon icon={ICONS.TWITTER} />
             </a>
           </div>
-        </div>
-
-        <div className="column is-one-third-tablet">
-          <div className="content has-text-centered">
-            <p className="has-text-warning is-size-6">
-              {','}
-              <span className="is-capitalized" dir="rtl">{data.companyName}</span>
-              <br />
-              {data.phone}
-              {','}
-              <br />
-              <span dir="rtl">{data.address}</span>
-            </p>
-            <p className="is-size-7 has-text-info">
-              made by{' '}
-              <a id="made-by" href="https://mar-bi.github.io/">
-                mar-bi studio
-              </a>{' '}
-              &#169; 2018
-            </p>
-          </div>
+          <p className="is-size-6 has-text-info has-text-centered">
+            made by{' '}
+            <a id="made-by" href="https://mar-bi.github.io/">
+              marbi studio
+            </a>{' '}
+            &#169; 2018
+          </p>
         </div>
       </div>
     </div>

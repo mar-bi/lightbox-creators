@@ -86,9 +86,9 @@ body {
 }
 
 .has-right-border {
-  border-right: 1px dotted lighten($charcoal, 15%);
+  border-left: 1px dotted lighten($charcoal, 15%);
   @media screen and (max-width: 768px) {
-    border-right: none;
+    border-left: none;
     border-bottom: 1px dotted lighten($charcoal, 15%);
   }  
 }
@@ -111,7 +111,7 @@ body {
 
 .footer-menu-item {
   display: inline-block;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   a {
     color: $silk !important;
     &:hover {
@@ -124,7 +124,7 @@ body {
 
   }
   @media screen and (min-width: 769px) and (max-width: 840px) {
-    font-size: 0.8rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -132,7 +132,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 1em;
+  padding: 1em 0;
 }
 
 .svg-icon {
@@ -144,14 +144,12 @@ body {
   }
 }
 
-
 #made-by {
   text-decoration: none;
   color: $tangerine;
   &:hover {
     color: darken($palegold, 5%);
   }
-
 }
 
 .hero-text-container {
