@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Testimonials = ({ testimonials }) => (
-  <div>
+  <div className="section">
     {testimonials.map((testimonial, index) => (
       <article className="message" key={`test-${index}`} dir="rtl">
         <div className="message-body">

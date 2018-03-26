@@ -21,6 +21,9 @@ $body-family: 'Lateef', cursive;
 $body-size: 16px;
 $body-color: $charcoal;
 $section-padding: 2rem 1.5rem;
+$message-background-color: $paper;
+$message-body-border: 1px solid $silk;
+$message-body-color: $charcoal;
 
 // Helper Classes
 html {
@@ -185,9 +188,13 @@ body {
   object-fit: cover !important;
   margin-bottom: 1em;
   border-radius: 4px;
+  @media screen and (min-width: 500px) and (max-width: 768px) {
+    max-width: 75%;
+  }  
   @media screen and (max-width: 768px) {
     height: auto;
   }
+
 }
 
 .blog-container {
@@ -205,6 +212,13 @@ body {
     list-style-type: arabic-indic !important;
     list-style-type: -moz-arabic-indic !important;
   }
+}
+
+.article-bcg {
+  margin-bottom: 1rem;
+  border: 1px solid $silk;
+  border-radius: 2px;
+  padding: 0.75rem;
 }
 
 

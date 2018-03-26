@@ -9,8 +9,29 @@ description: >-
   رغباتهم فلا يدركون ما يعقبها من الألم والأسي المحتم، واللوم كذلك يشمل هؤلاء 
   الذين أخفقوا في واجباتهم.
 intro:
-  blurbs:
-    - image: /img/car-service1.jpg
+  examples:
+    - image: /img/tiles1.jpg
+      text: >
+        علي الجانب الآخر نشجب ونستنكر
+    - image: /img/tiles2.jpg
+      text: >
+        الآخر نشجب ونستنكر هؤلاء الرجال
+    - image: /img/tiles3.jpg
+      text: >
+        نشجب ونستنكر هؤلاء الرجال
+    - image: /img/tiles4.jpg
+      text: >
+        علي الجانب نشجب ونستنكر
+    - image: /img/tiles5.jpg
+      text: >
+        هؤلاء الرجال
+
+projects:
+  - heading: مام الأمور ويخ
+    description: >
+      المغلوطة حول استنكار  النشوة وتمجيد الألم نشأت بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤ.
+    images:
+    - image: /img/car-service1.jpg 
       text: >
         علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
     - image: /img/car-service2.jpg
@@ -25,19 +46,27 @@ intro:
     - image: /img/car-service5.jpg
       text: >
         علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
-main:
-  heading: مام الأمور ويخ
-  description: >
-    المغلوطة حول استنكار  النشوة وتمجيد الألم نشأت بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤ.
-  image1:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
-  image2:
-    alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
-  image3:
-    alt: Coffee beans
-    image: /img/products-grid1.jpg
+      
+  - heading: مام الأمور ويخ
+    description: >
+      المغلوطة حول استنكار  النشوة وتمجيد الألم نشأت بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤ.
+    images:
+    - image: /img/car-service1.jpg 
+      text: >
+        علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
+    - image: /img/car-service2.jpg
+      text: >
+        علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
+    - image: /img/car-service3.jpg
+      text: >
+        علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
+    - image: /img/car-service4.jpg
+      text: >
+        علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
+    - image: /img/car-service5.jpg
+      text: >
+        علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
+
 testimonials:
   - author: محمد احمد
     quote: >-
