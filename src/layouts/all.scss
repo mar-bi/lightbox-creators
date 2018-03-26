@@ -181,10 +181,13 @@ body {
 .grid-img {
   display: block;
   align-self: center;
-  max-height: 200px;
+  height: 200px;
   object-fit: cover !important;
   margin-bottom: 1em;
   border-radius: 4px;
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
 }
 
 .blog-container {
