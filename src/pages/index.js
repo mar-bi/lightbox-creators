@@ -18,9 +18,9 @@ export default class IndexPage extends React.Component {
         <Hero
           image={CityNight}
           size="large"
-          title="الفهد للديكور والتشطيبات"
-          subtitle=""
+          title="Fahd decor"
           layer
+          main
         />
         <section className="section">
           <div className="container">

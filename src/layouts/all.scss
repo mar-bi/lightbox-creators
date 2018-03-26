@@ -1,5 +1,5 @@
 @import "~bulma/sass/utilities/initial-variables";
-@import url('https://fonts.googleapis.com/css?family=Lateef');
+@import url('https://fonts.googleapis.com/css?family=Lateef|Lobster');
 
 //own initial variables
 $palegold: #c0b283;
@@ -157,6 +157,12 @@ body {
   padding: 1.5rem 1rem;
   background-color: rgba(220, 108, 28,.55);
   border-radius: 4px;
+}
+
+.en-title {
+  font-family: 'Lobster', cursive;
+  text-transform: capitalize;
+  font-weight: 400 !important;
 }
 
 
