@@ -15,17 +15,17 @@ export const BlogPostTemplate = ({
   return (
     <section className="section">
       {helmet || ''}
-      <div className="container content">
+      <div className="container content is-large">
         <div className="columns">
           <div className="column is-10 is-offset-1" dir="rtl">
-            <h1
+            <h2
               className="title is-size-2 has-text-weight-bold is-bold-light"
               dir="rtl"
             >
               {title}
-            </h1>
+            </h2>
             <p dir="rtl">{description}</p>
-            <PostContent content={content} />
+            <PostContent className="user-content" content={content} />
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@ export default props => {
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
-      helmet={<Helmet title={`Blog | ${post.frontmatter.title}`} />}
+      helmet={<Helmet title={`الأخبار | ${post.frontmatter.title}`} />}
       title={post.frontmatter.title}
     />
   )

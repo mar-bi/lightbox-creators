@@ -191,7 +191,18 @@ body {
   padding: 1.5rem !important;
 }
 
-
+.user-content {
+  ul {
+    margin-right: 2rem;
+    margin-left: 1rem !important;
+  }
+  ol {
+    margin-right: 2rem;
+    margin-left: 1rem !important; 
+    list-style-type: arabic-indic !important;
+    list-style-type: -moz-arabic-indic !important;
+  }
+}
 
 
 
