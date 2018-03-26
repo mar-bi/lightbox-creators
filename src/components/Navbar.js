@@ -22,16 +22,16 @@ const Navbar = ({ title, links }) => {
       aria-label="main navigation"
       dir="rtl"
     >
-      <div className="container has-bottom-border">
+      <div className="container is-widescreen has-bottom-border">
         {/* brand navbar */}
         <div className="navbar-brand" dir="rtl">
-          <Link to="/" className="navbar-item is-size-2">
+          <Link to="/" className="navbar-item is-size-2-widescreen is-size-3">
             {title}
           </Link>
 
           {/* mobile & tablet navigation */}
           <div
-            className="navbar-burger"
+            className="navbar-burger mobile-nav-menu"
             data-target="navMenu"
             onClick={handleMobileNavbar}
           >
@@ -56,7 +56,7 @@ const Navbar = ({ title, links }) => {
           </div>
 
           <div className="navbar-end">
-            <div className="field has-addons has-padding">
+            <div className="field has-padding search-box">
               <div className="control">
                 <input className="input is-size-5" type="text" placeholder="بحث" />
               </div>
