@@ -27,13 +27,11 @@ const Footer = ({ links, data }) => (
         <div className="column is-one-third-tablet has-right-border">
           <div className="content has-text-centered">
             <p className="has-text-warning is-size-5" dir="ltr">
-              {','}
               <span className="is-capitalized" dir="rtl">
                 {data.companyName}
               </span>
               <br />
               {data.phone}
-              {','}
               <br />
               <span dir="rtl">{data.address}</span>
             </p>
@@ -55,7 +53,7 @@ const Footer = ({ links, data }) => (
               <Icon icon={ICONS.TWITTER} />
             </a>
           </div>
-          <p className="is-size-6 has-text-info has-text-centered">
+          <p id="creator" className="has-text-warning has-text-centered">
             made by{' '}
             <a id="made-by" href="https://mar-bi.github.io/">
               marbi studio
