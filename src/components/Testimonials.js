@@ -7,7 +7,10 @@ const Testimonials = ({ testimonials }) => (
       <article className="message" key={`test-${index}`} dir="rtl">
         <div className="message-body">
           <p className="is-size-4">{testimonial.quote}</p>
-          <cite className="has-text-weight-bold is-size-4"> – {testimonial.author}</cite>
+          <cite className="has-text-weight-bold is-size-4">
+            {' '}
+            – {testimonial.author}
+          </cite>
         </div>
       </article>
     ))}
@@ -17,5 +20,5 @@ const Testimonials = ({ testimonials }) => (
 export default Testimonials
 
 Testimonials.propTypes = {
-  testimonials: PropTypes.array
+  testimonials: PropTypes.array,
 }

@@ -8,6 +8,7 @@ export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
+    const { companyNameEn: company } = data.dataJson
     const rtlDate = dateStr => {
       const unixTime = new Date(dateStr)
       return unixTime.toLocaleDateString('ar-EG')
@@ -15,13 +16,7 @@ export default class IndexPage extends React.Component {
 
     return (
       <div>
-        <Hero
-          image={CityNight}
-          size="large"
-          title="Fahd decor"
-          layer
-          main
-        />
+        <Hero image={CityNight} size="large" title={company} layer main />
         <section className="section">
           <div className="container">
             <div className="columns">
@@ -32,11 +27,16 @@ export default class IndexPage extends React.Component {
                   </h2>
                 </div>
                 {posts
-                  .filter(post => post.node.frontmatter.templateKey === 'blog-post')
+                  .filter(
+                    post => post.node.frontmatter.templateKey === 'blog-post'
+                  )
                   .map(({ node: post }) => (
                     <div
                       className="content blog-container"
-                      style={{ border: '1px solid #c0b283', padding: '2em 4em' }}
+                      style={{
+                        border: '1px solid #c0b283',
+                        padding: '2em 4em',
+                      }}
                       key={post.id}
                     >
                       <p dir="rtl" className="is-size-3">
@@ -73,6 +73,9 @@ export default class IndexPage extends React.Component {
 
 export const pageQuery = graphql`
   query IndexQuery {
+    dataJson(type: { eq: "company" }) {
+      companyNameEn
+    }
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {

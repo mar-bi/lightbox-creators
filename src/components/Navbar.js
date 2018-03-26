@@ -58,7 +58,11 @@ const Navbar = ({ title, links }) => {
           <div className="navbar-end">
             <div className="field has-padding search-box">
               <div className="control">
-                <input className="input is-size-5" type="text" placeholder="بحث" />
+                <input
+                  className="input is-size-5"
+                  type="text"
+                  placeholder="بحث"
+                />
               </div>
 
               <div className="control">

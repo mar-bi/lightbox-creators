@@ -84,6 +84,7 @@ collections:
         fields:
           - {label: "Data type", name: "type", widget: "hidden", default: "company-data"}
           - {label: "Company name", name: "companyName", widget: "string"}
+          - {label: "Company name ENG", name: "companyNameEn", widget: "string"}
           - {label: "Address", name: "address", widget: "string"}
           - {label: "Phone", name: "phone", widget: "string"}
           - {label: "Email", name: "email", widget: "string"}

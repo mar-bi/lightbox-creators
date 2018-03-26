@@ -12,16 +12,11 @@ export const ProductPageTemplate = ({
   description,
   intro,
   projects,
-  testimonials
+  testimonials,
 }) => (
   <div>
-    <Hero
-      image={image}
-      size="medium"
-      title={title}
-      layer
-    />
-    <section>  
+    <Hero image={image} size="medium" title={title} layer />
+    <section>
       <div className="container">
         <div className="section">
           <div className="columns">
@@ -36,15 +31,14 @@ export const ProductPageTemplate = ({
                   </div>
                 </div>
 
-                <ImageGrid gridItems={intro.examples || [] } />
-                <Projects items={projects || [] }/>                
+                <ImageGrid gridItems={intro.examples || []} />
+                <Projects items={projects || []} />
                 <Testimonials testimonials={testimonials} />
-                
               </div>
             </div>
           </div>
         </div>
-      </div>  
+      </div>
     </section>
   </div>
 )
@@ -100,7 +94,7 @@ ProductPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
-  intro: PropTypes.array,
+  intro: PropTypes.object,
   projects: PropTypes.array,
-  testimonials: PropTypes.array
+  testimonials: PropTypes.array,
 }

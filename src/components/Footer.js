@@ -28,7 +28,9 @@ const Footer = ({ links, data }) => (
           <div className="content has-text-centered">
             <p className="has-text-warning is-size-5" dir="ltr">
               {','}
-              <span className="is-capitalized" dir="rtl">{data.companyName}</span>
+              <span className="is-capitalized" dir="rtl">
+                {data.companyName}
+              </span>
               <br />
               {data.phone}
               {','}

@@ -11,14 +11,12 @@ export const HTMLContent = ({ content, className }) => (
 
 Content.propTypes = {
   content: PropTypes.func,
-  className: PropTypes.string
+  className: PropTypes.string,
 }
 
 HTMLContent.propTypes = {
-  content: PropTypes.func,
-  className: PropTypes.string
+  content: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  className: PropTypes.string,
 }
 
 export default Content
-
-

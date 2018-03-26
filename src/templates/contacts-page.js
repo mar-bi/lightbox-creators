@@ -12,7 +12,7 @@ export const ContactPageTemplate = ({
 }) => {
   return (
     <div>
-      <Hero image={GoldenLight} size="medium" title={title} layer/>
+      <Hero image={GoldenLight} size="medium" title={title} layer />
       <section className="section">
         <div className="container">
           <div className="columns">
@@ -22,7 +22,9 @@ export const ContactPageTemplate = ({
                 <h4 className="is-size-4">{address}</h4>
                 <h3 className="has-text-weight-semibold is-size-3">تليفون</h3>
                 <h4 className="is-size-4">{phone}</h4>
-                <h3 className="has-text-weight-semibold is-size-3">بريد اليكترونى</h3>
+                <h3 className="has-text-weight-semibold is-size-3">
+                  بريد اليكترونى
+                </h3>
                 <h4 className="is-size-4">{email}</h4>
               </div>
             </div>
