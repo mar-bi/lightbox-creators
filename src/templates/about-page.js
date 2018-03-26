@@ -20,7 +20,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div dir="rtl">
-                <PageContent className="content" content={content} />
+                <PageContent className="content is-large" content={content} />
               </div>
             </div>
           </div>
