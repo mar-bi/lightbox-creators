@@ -226,6 +226,12 @@ body {
   padding: 0.75rem;
 }
 
+.custom-tag {
+  &:not(:last-child) {
+    margin-left: 0.5rem !important;
+    margin-right: 0 !important;
+  }
+}
 
 
 @import "~bulma"

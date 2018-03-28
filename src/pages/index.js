@@ -14,6 +14,8 @@ export default class IndexPage extends React.Component {
       return unixTime.toLocaleDateString('ar-EG')
     }
 
+    //console.log(posts)
+
     return (
       <div>
         <Hero image={CityNight} size="large" title={company} layer main />
@@ -32,9 +34,10 @@ export default class IndexPage extends React.Component {
                   )
                   .map(({ node: post }) => (
                     <div
-                      className="content blog-container"
+                      className="content box blog-container"
                       style={{
                         border: '1px solid #c0b283',
+                        borderRadius: '2px',
                         padding: '2em 4em',
                       }}
                       key={post.id}
@@ -48,10 +51,15 @@ export default class IndexPage extends React.Component {
                           {rtlDate(post.frontmatter.date)}
                         </small>
                       </p>
-                      <p dir="rtl" className="is-size-4">
-                        {post.frontmatter.description}
-                        <br />
-                        <br />
+                      <div dir="rtl">
+                        <p className="is-size-4">{post.frontmatter.description}</p>
+                        <div className="tags">
+                          {post.frontmatter.tags.map((elem, index) => (
+                            <a key={`elem-${index}`} className="tag custom-tag is-warning is-size-5 is-link">
+                              {elem.tag}
+                            </a>
+                          ))}
+                        </div>
                         <Link
                           className="button is-small is-danger is-outlined is-size-5 has-text-weight-semibold"
                           to={post.fields.slug}
@@ -59,7 +67,7 @@ export default class IndexPage extends React.Component {
                         >
                           استمرار
                         </Link>
-                      </p>
+                      </div>
                     </div>
                   ))}
               </div>
@@ -88,6 +96,9 @@ export const pageQuery = graphql`
             templateKey
             date
             description
+            tags {
+              tag
+            }
           }
         }
       }
