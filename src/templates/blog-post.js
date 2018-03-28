@@ -9,6 +9,7 @@ export const BlogPostTemplate = ({
   description,
   title,
   helmet,
+  tags
 }) => {
   const PostContent = contentComponent || Content
 
@@ -24,6 +25,13 @@ export const BlogPostTemplate = ({
             >
               {title}
             </h2>
+            <div className="tags">
+              {tags.map((elem, index) => (
+                <a key={`elem-${index}`} className="tag custom-tag is-warning is-size-5 is-link">
+                  {elem.tag}
+                </a>
+              ))}
+            </div>
             <p dir="rtl">{description}</p>
             <PostContent className="user-content" content={content} />
           </div>
@@ -43,6 +51,7 @@ export default props => {
       description={post.frontmatter.description}
       helmet={<Helmet title={`الأخبار | ${post.frontmatter.title}`} />}
       title={post.frontmatter.title}
+      tags={post.frontmatter.tags}
     />
   )
 }
@@ -56,6 +65,9 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        tags {
+          tag
+        }
       }
     }
   }
@@ -67,4 +79,5 @@ BlogPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
+  tags: PropTypes.array
 }
