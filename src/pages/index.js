@@ -14,8 +14,6 @@ export default class IndexPage extends React.Component {
       return unixTime.toLocaleDateString('ar-EG')
     }
 
-    //console.log(posts)
-
     return (
       <div>
         <Hero image={CityNight} size="large" title={company} layer main />
@@ -52,10 +50,15 @@ export default class IndexPage extends React.Component {
                         </small>
                       </p>
                       <div dir="rtl">
-                        <p className="is-size-4">{post.frontmatter.description}</p>
+                        <p className="is-size-4">
+                          {post.frontmatter.description}
+                        </p>
                         <div className="tags">
                           {post.frontmatter.tags.map((elem, index) => (
-                            <a key={`elem-${index}`} className="tag custom-tag is-warning is-size-5 is-link">
+                            <a
+                              key={`elem-${index}`}
+                              className="tag custom-tag is-warning is-size-5 is-link"
+                            >
                               {elem.tag}
                             </a>
                           ))}

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const Projects = ({ items }) => (
   <article>
     {items.map((item, index) => (
-      <div key={`proj-${index}`} className="article-bcg">
+      <div key={`proj-${index}`} className="box article-bcg">
         <div className="columns">
           <div className="column is-8-desktop">
             <div className="content is-large" dir="rtl">

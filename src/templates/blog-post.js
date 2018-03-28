@@ -9,7 +9,7 @@ export const BlogPostTemplate = ({
   description,
   title,
   helmet,
-  tags
+  tags,
 }) => {
   const PostContent = contentComponent || Content
 
@@ -27,7 +27,10 @@ export const BlogPostTemplate = ({
             </h2>
             <div className="tags">
               {tags.map((elem, index) => (
-                <a key={`elem-${index}`} className="tag custom-tag is-warning is-size-5 is-link">
+                <a
+                  key={`elem-${index}`}
+                  className="tag custom-tag is-warning is-size-5 is-link"
+                >
                   {elem.tag}
                 </a>
               ))}
@@ -79,5 +82,5 @@ BlogPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
-  tags: PropTypes.array
+  tags: PropTypes.array,
 }
