@@ -1,13 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import kebabCase from 'lodash/kebabCase'
 import Hero from '../components/Hero'
 import CityNight from '../img/city-night.jpg'
 
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    const { edges: posts, group } = data.allMarkdownRemark
     const { companyNameEn: company } = data.dataJson
     const rtlDate = dateStr => {
       const unixTime = new Date(dateStr)
@@ -26,6 +27,37 @@ export default class IndexPage extends React.Component {
                     الأخبار
                   </h2>
                 </div>
+              </div>
+            </div>
+
+            <div className="columns is-tablet">
+              <div className="column is-3-tablet is-2-widescreen is-offset-1">
+                <div 
+                  className="content box"
+                  style={{
+                    border: '1px solid #c0b283',
+                    borderRadius: '2px',
+                    padding: '1.5em',
+                    backgroundColor: 'rgba(220,208,192,0.45)'
+                  }}
+                > 
+                  <h2 className="is-size-3" dir="rtl">List of tags</h2>
+                  <ul 
+                    className="tags-list"
+                    dir="rtl"
+                  >
+                    {group.map(tag => (
+                      <li key={tag.fieldValue} className="is-size-4">
+                        <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                          {tag.fieldValue} ({tag.totalCount})
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              <div className="column is-7-tablet is-8-widescreen">
                 {posts
                   .filter(
                     post => post.node.frontmatter.templateKey === 'blog-post'
@@ -55,12 +87,13 @@ export default class IndexPage extends React.Component {
                         </p>
                         <div className="tags">
                           {post.frontmatter.tags.map((elem, index) => (
-                            <a
+                            <Link
                               key={`elem-${index}`}
+                              to={`/tags/${elem}/`}
                               className="tag custom-tag is-warning is-size-5 is-link"
                             >
-                              {elem.tag}
-                            </a>
+                              {elem}
+                            </Link>
                           ))}
                         </div>
                         <Link
@@ -74,6 +107,7 @@ export default class IndexPage extends React.Component {
                     </div>
                   ))}
               </div>
+  
             </div>
           </div>
         </section>
@@ -99,11 +133,13 @@ export const pageQuery = graphql`
             templateKey
             date
             description
-            tags {
-              tag
-            }
+            tags
           }
         }
+      }
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
       }
     }
   }

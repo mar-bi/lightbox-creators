@@ -78,7 +78,6 @@ export const productPageQuery = graphql`
           description
           images {
             image
-            text
           }
         }
         testimonials {

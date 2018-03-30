@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
+import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
 
 export const BlogPostTemplate = ({
@@ -27,12 +28,13 @@ export const BlogPostTemplate = ({
             </h2>
             <div className="tags">
               {tags.map((elem, index) => (
-                <a
+                <Link
                   key={`elem-${index}`}
+                  to={`/tags/${elem}/`}
                   className="tag custom-tag is-warning is-size-5 is-link"
                 >
-                  {elem.tag}
-                </a>
+                  {elem}
+                </Link>
               ))}
             </div>
             <p dir="rtl">{description}</p>
@@ -68,9 +70,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
-        tags {
-          tag
-        }
+        tags
       }
     }
   }

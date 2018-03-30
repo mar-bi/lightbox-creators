@@ -24,6 +24,7 @@ $section-padding: 2rem 1.5rem;
 $message-background-color: $paper;
 $message-body-border: 1px solid $silk;
 $message-body-color: $charcoal;
+$modal-close-top: 100px;
 
 // Helper Classes
 html {
@@ -199,7 +200,13 @@ body {
   @media screen and (max-width: 768px) {
     height: auto;
   }
+}
 
+.modal-img {
+  margin-top: 4rem !important;
+  @media screen and (max-width: 768px) {
+    margin-top: 2rem !important;
+  }
 }
 
 .blog-container {
@@ -231,6 +238,18 @@ body {
     margin-left: 0.5rem !important;
     margin-right: 0 !important;
   }
+}
+
+.tags-list {
+  list-style: none !important;
+  @media screen and (max-width: 768px) {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    li {
+      margin-left: 1rem;
+    }
+  }  
 }
 
 
