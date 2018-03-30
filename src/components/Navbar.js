@@ -5,12 +5,8 @@ import Link from 'gatsby-link'
 const Navbar = ({ title, links }) => {
   const handleMobileNavbar = e => {
     const elem = e.target
-
-    // Get the target from the "data-target" attribute
-    const elemTarget = e.target.dataset.target
-    const target = document.getElementById(elemTarget)
-
-    //Toggle the class on both the "navbar-burger" and the "navbar-menu"
+    const target = document.getElementById('navMenu')
+    
     elem.classList.toggle('is-active')
     target.classList.toggle('is-active')
   }
