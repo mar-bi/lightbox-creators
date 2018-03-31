@@ -31,7 +31,7 @@ const Footer = ({ links, data }) => (
                 {data.companyName}
               </span>
               <br />
-              {data.phone}
+              <span className="eng-field is-size-7">{data.phone}</span>
               <br />
               <span dir="rtl">{data.address}</span>
             </p>
