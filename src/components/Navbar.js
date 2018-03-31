@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
 const Navbar = ({ title, links }) => {
-  const handleMobileNavbar = e => {
-    const elem = e.target
+  const handleMobileNavbar = () => {
+    const elem = document.getElementsByClassName('navbar-burger')[0]
     const target = document.getElementById('navMenu')
-    
+   
     elem.classList.toggle('is-active')
     target.classList.toggle('is-active')
   }
