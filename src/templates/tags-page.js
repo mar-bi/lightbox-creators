@@ -7,9 +7,6 @@ import Helmet from 'react-helmet'
 const Tags = ({ pathContext, data }) => {
   const { tag } = pathContext
   const { edges, totalCount } = data.allMarkdownRemark
-  const tagHeader = `${totalCount} post${
-    totalCount === 1 ? '' : 's'
-  } tagged with '${tag}'`
 
   return (
     <section 
@@ -24,10 +21,14 @@ const Tags = ({ pathContext, data }) => {
               className="title is-size-2 has-text-weight-bold is-bold-light"
               dir="rtl"
             >
-              {tagHeader}
+              الأخبار الموسومة
+              { ' ' } 
+              <span className="has-text-danger">{`"${tag}"`}</span> 
+              { ' ' }
+              <span className="has-text-weight-light">{`(${totalCount})`}</span>
             </h2>
 
-            <ul>
+            <ul className="right-ul">
               {edges.map(({ node }) => {
                 const { title } = node.frontmatter
                 const { slug } = node.fields

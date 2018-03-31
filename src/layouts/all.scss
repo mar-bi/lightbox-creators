@@ -202,12 +202,12 @@ body {
   }
 }
 
-.modal-img {
-  margin-top: 4rem !important;
-  @media screen and (max-width: 768px) {
-    margin-top: 2rem !important;
-  }
-}
+// .modal-img {
+//   margin-top: 4rem !important;
+//   @media screen and (max-width: 768px) {
+//     margin-top: 2rem !important;
+//   }
+// }
 
 .blog-container {
   padding: 1.5rem !important;
@@ -246,10 +246,16 @@ body {
     display: flex !important;
     flex-wrap: wrap;
     align-items: center;
+    margin: 0 !important;
     li {
       margin-left: 1rem;
     }
   }  
+}
+
+.right-ul {
+  margin-right: 2rem !important;
+  margin-left: 0 !important;
 }
 
 

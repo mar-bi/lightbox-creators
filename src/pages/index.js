@@ -38,10 +38,10 @@ export default class IndexPage extends React.Component {
                     border: '1px solid #c0b283',
                     borderRadius: '2px',
                     padding: '1.5em',
-                    backgroundColor: 'rgba(220,208,192,0.45)'
+                    backgroundColor: 'rgba(220,208,192,0.25)'
                   }}
                 > 
-                  <h2 className="is-size-3" dir="rtl">List of tags</h2>
+                  <h2 className="is-size-3" dir="rtl">قائمة العلامات</h2>
                   <ul 
                     className="tags-list"
                     dir="rtl"

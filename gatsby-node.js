@@ -49,7 +49,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     let tags = []
     _.each(markdownFiles, edge => {
       if (_.get(edge, 'node.frontmatter.tags')) {
-        console.log('tag is found')
         tags = tags.concat(edge.node.frontmatter.tags)
       }
     })
