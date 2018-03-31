@@ -174,11 +174,8 @@ body {
   font-weight: 400 !important;
 }
 
-
-.contact-page {
-  img {
-    display: block;
-  }
+.eng-field {
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
 .grid-img-container {
@@ -202,12 +199,6 @@ body {
   }
 }
 
-// .modal-img {
-//   margin-top: 4rem !important;
-//   @media screen and (max-width: 768px) {
-//     margin-top: 2rem !important;
-//   }
-// }
 
 .blog-container {
   padding: 1.5rem !important;
@@ -253,10 +244,6 @@ body {
   }  
 }
 
-.right-ul {
-  margin-right: 2rem !important;
-  margin-left: 0 !important;
-}
 
 
 @import "~bulma"

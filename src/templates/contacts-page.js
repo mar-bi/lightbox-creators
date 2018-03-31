@@ -21,11 +21,11 @@ export const ContactPageTemplate = ({
                 <h3 className="has-text-weight-semibold is-size-3">العنوان</h3>
                 <h4 className="is-size-4">{address}</h4>
                 <h3 className="has-text-weight-semibold is-size-3">تليفون</h3>
-                <h4 className="is-size-4">{phone}</h4>
+                <h4 className="is-size-6 eng-field">{phone}</h4>
                 <h3 className="has-text-weight-semibold is-size-3">
                   بريد اليكترونى
                 </h3>
-                <h4 className="is-size-4">{email}</h4>
+                <h4 className="is-size-6 eng-field">{email}</h4>
               </div>
             </div>
             <div className="column is-5">
