@@ -14,7 +14,7 @@ const TemplateWrapper = ({ children, data }) => (
       links={data.site.siteMetadata.navLinks}
     />
     <div id="wrapper">{children()}</div>
-    <Footer links={data.site.siteMetadata.navLinks} data={data.dataJson} />
+    <Footer links={data.site.siteMetadata.footerLinks} data={data.dataJson} />
   </div>
 )
 
@@ -31,6 +31,10 @@ export const query = graphql`
       siteMetadata {
         title
         navLinks {
+          path
+          name
+        }
+        footerLinks {
           path
           name
         }

@@ -29,18 +29,14 @@ $modal-close-top: 100px;
 // Helper Classes
 html {
   margin-top: 52px !important;
-  height: 100%;
-}
-
-body {
-  //height: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 #wrapper {
-  flex: 1 0 auto;
-  //margin-bottom: 52px;
+  min-height: calc(100vh - 143px - 85px);
+}
+
+#footer {
+  min-height: 143px;
 }
 
 .full-width-image-container {
@@ -99,7 +95,6 @@ body {
 
 .footer {
   padding: 1.5rem !important;
-  flex-shrink: 0;
 }
 
 .footer-menu {
@@ -244,6 +239,9 @@ body {
   }  
 }
 
-
+.right-ul {
+  margin-left: 0 !important;
+  margin-right: 2rem !important;
+}
 
 @import "~bulma"

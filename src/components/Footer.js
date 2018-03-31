@@ -8,7 +8,7 @@ const FooterNav = ({ links }) => (
   <ul className="footer-menu">
     {links.map((link, index) => (
       <li key={`footer-nav-${index}`} className="footer-menu-item">
-        <Link className="navbar-item is-capitalized" to={link.path}>
+        <Link className="navbar-item is-capitalized" to={link.path} exact>
           {link.name}
         </Link>
       </li>
@@ -17,8 +17,8 @@ const FooterNav = ({ links }) => (
 )
 
 const Footer = ({ links, data }) => (
-  <div className="container">
-    <div className="footer is-fixed-bottom">
+  <div className="container" id="footer">
+    <div className="footer">
       <div className="columns" dir="rtl">
         <div className="column is-one-third-tablet has-right-border">
           <FooterNav links={links} />

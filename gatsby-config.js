@@ -8,6 +8,14 @@ module.exports = {
       { path: 'electrical', name: 'اعمال كهرباء' },
       { path: 'contacts', name: 'اتصل بنا' },
     ],
+    footerLinks: [
+      { path: '', name: 'الرئيسية' },
+      { path: 'about', name: 'عن الشركة' },
+      { path: 'outdoor', name: 'واجهات' },
+      { path: 'indoor', name: 'تشطيبات' },
+      { path: 'electrical', name: 'اعمال كهرباء' },
+      { path: 'contacts', name: 'اتصل بنا' },
+    ],
   },
   plugins: [
     'gatsby-plugin-react-helmet',
