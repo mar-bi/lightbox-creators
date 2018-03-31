@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ImageModal from './ImageModal'
 
-const ImageGrid = ({ gridItems }) => { 
-  const showImage = (e) => {
+const ImageGrid = ({ gridItems }) => {
+  const showImage = e => {
     const targetId = e.target.id
     const modalId = `mdl-${targetId}`
     const modal = document.getElementById(modalId)
@@ -20,14 +20,14 @@ const ImageGrid = ({ gridItems }) => {
         >
           <div className="content grid-img-container">
             <img
-              id={item.image} 
-              src={item.image} 
-              alt="project-photo" 
+              id={item.image}
+              src={item.image}
+              alt="project-photo"
               className="grid-img"
-              onClick={showImage} 
+              onClick={showImage}
             />
             <p className="has-text-centered">{item.text}</p>
-            <ImageModal elemId={`mdl-${item.image}`} image={item.image}/>
+            <ImageModal elemId={`mdl-${item.image}`} image={item.image} />
           </div>
         </div>
       ))}

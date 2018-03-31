@@ -55,7 +55,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
     tags = _.uniq(tags)
 
-
     // Make tag pages
     tags.forEach(tag => {
       createPage({

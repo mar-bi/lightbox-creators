@@ -32,20 +32,19 @@ export default class IndexPage extends React.Component {
 
             <div className="columns is-tablet">
               <div className="column is-3-tablet is-2-widescreen is-offset-1">
-                <div 
+                <div
                   className="content box"
                   style={{
                     border: '1px solid #c0b283',
                     borderRadius: '2px',
                     padding: '1.5em',
-                    backgroundColor: 'rgba(220,208,192,0.25)'
+                    backgroundColor: 'rgba(220,208,192,0.25)',
                   }}
-                > 
-                  <h2 className="is-size-3" dir="rtl">قائمة العلامات</h2>
-                  <ul 
-                    className="tags-list"
-                    dir="rtl"
-                  >
+                >
+                  <h2 className="is-size-3" dir="rtl">
+                    قائمة العلامات
+                  </h2>
+                  <ul className="tags-list" dir="rtl">
                     {group.map(tag => (
                       <li key={tag.fieldValue} className="is-size-4">
                         <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
@@ -107,7 +106,6 @@ export default class IndexPage extends React.Component {
                     </div>
                   ))}
               </div>
-  
             </div>
           </div>
         </section>

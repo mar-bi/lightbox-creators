@@ -3,16 +3,12 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
-
 const Tags = ({ pathContext, data }) => {
   const { tag } = pathContext
   const { edges, totalCount } = data.allMarkdownRemark
 
   return (
-    <section 
-      className="section"
-      style={{ marginTop: '2rem'}}
-    >
+    <section className="section" style={{ marginTop: '2rem' }}>
       <Helmet title={`الأخبار | ${tag}`} />
       <div className="container content is-large">
         <div className="columns">
@@ -21,10 +17,8 @@ const Tags = ({ pathContext, data }) => {
               className="title is-size-2 has-text-weight-bold is-bold-light"
               dir="rtl"
             >
-              الأخبار الموسومة
-              { ' ' } 
-              <span className="has-text-danger">{`"${tag}"`}</span> 
-              { ' ' }
+              الأخبار الموسومة{' '}
+              <span className="has-text-danger">{`"${tag}"`}</span>{' '}
               <span className="has-text-weight-light">{`(${totalCount})`}</span>
             </h2>
 

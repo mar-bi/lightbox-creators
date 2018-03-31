@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ImageModal from './ImageModal'
 
-const Projects = ({ items }) => { 
-  const showImage = (e) => {
+const Projects = ({ items }) => {
+  const showImage = e => {
     const targetId = e.target.id.substring(3)
     const modalId = `mod${targetId}`
     const modal = document.getElementById(modalId)
@@ -40,7 +40,7 @@ const Projects = ({ items }) => {
                     onClick={showImage}
                   />
                 </div>
-                <ImageModal elemId={`mod-${index}-${i}`} image={elem.image}/>
+                <ImageModal elemId={`mod-${index}-${i}`} image={elem.image} />
               </div>
             ))}
           </div>

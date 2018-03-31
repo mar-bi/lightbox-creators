@@ -2,26 +2,23 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const ImageModal = ({ elemId, image }) => {
-  const closeModal = (e) => {
+  const closeModal = e => {
     const modal = e.target.parentNode
     modal.classList.remove('is-active')
   }
 
   return (
     <div id={elemId} className="modal">
-      <div 
-        className="modal-background"
-        onClick={closeModal}
-      />
+      <div className="modal-background" onClick={closeModal} />
       <div className="modal-content">
         <p className="image">
-          <img src={image} alt="project-image" className="modal-img"/>
+          <img src={image} alt="project-image" />
         </p>
       </div>
-      <button 
-        className="modal-close is-large" 
+      <button
+        className="modal-close is-large"
         aria-label="close"
-        onClick={closeModal} 
+        onClick={closeModal}
       />
     </div>
   )
@@ -31,5 +28,5 @@ export default ImageModal
 
 ImageModal.propTypes = {
   image: PropTypes.string,
-  elemId: PropTypes.string
+  elemId: PropTypes.string,
 }
