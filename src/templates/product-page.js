@@ -14,9 +14,13 @@ export const ProductPageTemplate = ({
   intro,
   projects,
   testimonials,
+  path,
+  url
 }) => (
   <div>
-    <Helmet title={`الفهد | ${title}`} />
+    <Helmet title={`الفهد | ${title}`}>
+      <link rel="canonical" href={`${url}${path}`}/>
+    </Helmet>
     <Hero image={image} size="medium" title={title} layer />
     <section>
       <div className="container">
@@ -45,8 +49,9 @@ export const ProductPageTemplate = ({
   </div>
 )
 
-export default ({ data }) => {
+export default ({ data, location }) => {
   const { frontmatter } = data.markdownRemark
+  const { url } = data
 
   return (
     <ProductPageTemplate
@@ -57,6 +62,8 @@ export default ({ data }) => {
       intro={frontmatter.intro}
       projects={frontmatter.projects}
       testimonials={frontmatter.testimonials}
+      path={location.pathname}
+      url={url.siteMetadata.url}
     />
   )
 }
@@ -88,6 +95,11 @@ export const productPageQuery = graphql`
         }
       }
     }
+    url: site {
+      siteMetadata {
+        url
+      }
+    }
   }
 `
 ProductPageTemplate.propTypes = {
@@ -98,4 +110,6 @@ ProductPageTemplate.propTypes = {
   intro: PropTypes.object,
   projects: PropTypes.array,
   testimonials: PropTypes.array,
+  path: PropTypes.string,
+  url: PropTypes.string
 }

@@ -9,12 +9,16 @@ export const AboutPageTemplate = ({
   content,
   contentComponent,
   heroImage,
+  path,
+  url
 }) => {
   const PageContent = contentComponent || Content
 
   return (
     <div>
-      <Helmet title={`الفهد | ${title}`} />
+      <Helmet title={`الفهد | ${title}`}>
+        <link rel="canonical" href={`${url}${path}`}/>
+      </Helmet>
       <Hero image={heroImage.resize.src} size="medium" title={title} layer />
       <section className="section section--gradient">
         <div className="container">
@@ -34,8 +38,8 @@ export const AboutPageTemplate = ({
   )
 }
 
-export default ({ data }) => {
-  const { markdownRemark: post } = data
+export default ({ data, location }) => {
+  const { markdownRemark: post, url } = data
 
   return (
     <AboutPageTemplate
@@ -43,6 +47,8 @@ export default ({ data }) => {
       title={post.frontmatter.title}
       content={post.html}
       heroImage={data.heroImage}
+      path={location.pathname}
+      url={url.siteMetadata.url}
     />
   )
 }
@@ -60,6 +66,11 @@ export const aboutPageQuery = graphql`
         src
       }
     }
+    url: site {
+      siteMetadata {
+        url
+      }
+    }
   }
 `
 AboutPageTemplate.propTypes = {
@@ -67,4 +78,6 @@ AboutPageTemplate.propTypes = {
   content: PropTypes.string,
   contentComponent: PropTypes.func,
   heroImage: PropTypes.object,
+  path: PropTypes.string,
+  url: PropTypes.string
 }

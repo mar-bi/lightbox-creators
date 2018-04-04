@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import './all.scss'
 
-const Seo = ({ title, description, image, url, location }) => {
+const Seo = ({ title, description, image, url }) => {
   const seoTitle = title || 'الفهد للديكور والتشطيبات',
     seoDescription = description || '',
     seoImage = `${url}${image}`,
@@ -19,7 +19,7 @@ const Seo = ({ title, description, image, url, location }) => {
       {/* General tags */}
       <meta name="description" content={seoDescription} />
       <meta name="image" content={seoImage} />
-      <link rel="canonical" href={`${url}${location}`} />
+      <link rel="canonical" href={url} />
 
       {/* OpenGraph tags */}
       <meta property="og:url" content={seoUrl} />
@@ -38,15 +38,14 @@ const Seo = ({ title, description, image, url, location }) => {
   )
 }
 
-const TemplateWrapper = ({ children, data, location }) => {
+const TemplateWrapper = ({ children, data }) => {
   return (
     <div>
       <Seo
         title={data.site.siteMetadata.title}
-        description={data.site.siteMetadata.description}
+        description={data.dataJson.description}
         image={data.image.resize.src}
         url={data.site.siteMetadata.url}
-        location={location.pathname}
       />
       <Navbar
         title={data.site.siteMetadata.title}
@@ -63,7 +62,6 @@ Seo.propTypes = {
   description: PropTypes.string,
   image: PropTypes.string,
   url: PropTypes.string,
-  location: PropTypes.string,
 }
 
 TemplateWrapper.propTypes = {
@@ -79,8 +77,6 @@ export const query = graphql`
     site {
       siteMetadata {
         title
-        description
-        image
         url
         navLinks {
           path
@@ -94,6 +90,7 @@ export const query = graphql`
     }
     dataJson(type: { eq: "company" }) {
       companyName
+      description
       address
       email
       phone
