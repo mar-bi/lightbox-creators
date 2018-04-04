@@ -9,9 +9,8 @@ export const ContactPageTemplate = ({
   address,
   phone,
   email,
-  heroImage
+  heroImage,
 }) => {
-
   return (
     <div>
       <Helmet title={`الفهد | ${title}`} />
@@ -50,7 +49,7 @@ ContactPageTemplate.propTypes = {
   address: PropTypes.string,
   phone: PropTypes.string,
   email: PropTypes.string,
-  heroImage: PropTypes.object
+  heroImage: PropTypes.object,
 }
 
 export default ({ data }) => {
@@ -79,8 +78,8 @@ export const contactPageQuery = graphql`
         email
       }
     }
-    heroImage: imageSharp(id: {regex: "/golden-light.jpg/"}){
-      resize(width: 1920){
+    heroImage: imageSharp(id: { regex: "/golden-light.jpg/" }) {
+      resize(width: 1920) {
         src
       }
     }

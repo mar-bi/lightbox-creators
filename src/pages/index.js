@@ -16,7 +16,13 @@ export default class IndexPage extends React.Component {
 
     return (
       <div>
-        <Hero image={data.heroImage.resize.src} size="large" title={company} layer main />
+        <Hero
+          image={data.heroImage.resize.src}
+          size="large"
+          title={company}
+          layer
+          main
+        />
         <section className="section">
           <div className="container">
             <div className="columns">
@@ -115,8 +121,8 @@ export default class IndexPage extends React.Component {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    heroImage: imageSharp(id: {regex: "/city-night.jpg/"}){
-      resize(width: 1920){
+    heroImage: imageSharp(id: { regex: "/city-night.jpg/" }) {
+      resize(width: 1920) {
         src
       }
     }

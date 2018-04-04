@@ -6,9 +6,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import './all.scss'
 
-
 const Seo = ({ title, description, image, url, isNews, location }) => {
-
   const seoTitle = title || 'الفهد للديكور والتشطيبات',
     seoDescription = description || '',
     seoImage = image,
@@ -16,8 +14,8 @@ const Seo = ({ title, description, image, url, isNews, location }) => {
 
   return (
     <Helmet defaultTitle={seoTitle}>
-      <html lang="ar"/>
-      
+      <html lang="ar" />
+
       {/* General tags */}
       <meta name="description" content={seoDescription} />
       <meta name="image" content={seoImage} />
@@ -38,14 +36,14 @@ const Seo = ({ title, description, image, url, isNews, location }) => {
       <meta name="twitter:image" content={seoImage} />
     </Helmet>
   )
-}   
+}
 
-const TemplateWrapper = ({ children, data, location }) => { 
+const TemplateWrapper = ({ children, data, location }) => {
   const isNews = location.pathname.slice(0, 6) === `/news/`
 
   return (
     <div>
-      <Seo 
+      <Seo
         title={data.site.siteMetadata.title}
         description={data.site.siteMetadata.description}
         image={data.image.resize.src}
@@ -63,20 +61,19 @@ const TemplateWrapper = ({ children, data, location }) => {
   )
 }
 
-
 Seo.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   image: PropTypes.string,
   url: PropTypes.string,
   isNews: PropTypes.bool,
-  location: PropTypes.string
+  location: PropTypes.string,
 }
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
   data: PropTypes.object,
-  location: PropTypes.object
+  location: PropTypes.object,
 }
 
 export default TemplateWrapper
@@ -109,10 +106,10 @@ export const query = graphql`
       twitter
       instagram
     }
-    image: imageSharp(id: {regex: "/site-preview.jpg/"}){
-      resize(width: 400){
+    image: imageSharp(id: { regex: "/site-preview.jpg/" }) {
+      resize(width: 400) {
         src
       }
-    }   
+    }
   }
 `

@@ -4,7 +4,12 @@ import Helmet from 'react-helmet'
 import Content, { HTMLContent } from '../components/Content'
 import Hero from '../components/Hero'
 
-export const AboutPageTemplate = ({ title, content, contentComponent, heroImage }) => {
+export const AboutPageTemplate = ({
+  title,
+  content,
+  contentComponent,
+  heroImage,
+}) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -50,8 +55,8 @@ export const aboutPageQuery = graphql`
         title
       }
     }
-    heroImage: imageSharp(id: {regex: "/door.jpg/"}){
-      resize(width: 1920){
+    heroImage: imageSharp(id: { regex: "/door.jpg/" }) {
+      resize(width: 1920) {
         src
       }
     }
@@ -61,5 +66,5 @@ AboutPageTemplate.propTypes = {
   title: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
-  heroImage: PropTypes.object
+  heroImage: PropTypes.object,
 }

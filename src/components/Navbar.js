@@ -44,7 +44,8 @@ const Navbar = ({ title, links }) => {
               <Link
                 key={`nav-${index}`}
                 className="navbar-item is-capitalized is-size-4"
-                to={link.path} exact
+                to={link.path}
+                exact
               >
                 {link.name}
               </Link>
