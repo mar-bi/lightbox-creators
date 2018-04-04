@@ -1,8 +1,6 @@
 module.exports = {
   siteMetadata: {
     title: 'الفهد للديكور والتشطيبات',
-    description: 'add right description',
-    image: '/img/site-preview.jpg',
     url: 'https://cranky-wescoff-204720.netlify.com',
     navLinks: [
       { path: 'about', name: 'عن الشركة' },
