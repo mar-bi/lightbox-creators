@@ -6,10 +6,10 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import './all.scss'
 
-const Seo = ({ title, description, image, url, isNews, location }) => {
+const Seo = ({ title, description, image, url, location }) => {
   const seoTitle = title || 'الفهد للديكور والتشطيبات',
     seoDescription = description || '',
-    seoImage = image,
+    seoImage = `${url}${image}`,
     seoUrl = url
 
   return (
@@ -23,7 +23,7 @@ const Seo = ({ title, description, image, url, isNews, location }) => {
 
       {/* OpenGraph tags */}
       <meta property="og:url" content={seoUrl} />
-      {isNews ? <meta property="og:type" content="article" /> : null}
+      <meta property="og:type" content="article" />
       <meta property="og:title" content={seoTitle} />
       <meta property="og:description" content={seoDescription} />
       <meta property="og:image" content={seoImage} />
@@ -39,8 +39,6 @@ const Seo = ({ title, description, image, url, isNews, location }) => {
 }
 
 const TemplateWrapper = ({ children, data, location }) => {
-  const isNews = location.pathname.slice(0, 6) === `/news/`
-
   return (
     <div>
       <Seo
@@ -48,8 +46,7 @@ const TemplateWrapper = ({ children, data, location }) => {
         description={data.site.siteMetadata.description}
         image={data.image.resize.src}
         url={data.site.siteMetadata.url}
-        isNews={isNews}
-        loaction={location.pathname}
+        location={location.pathname}
       />
       <Navbar
         title={data.site.siteMetadata.title}
@@ -66,7 +63,6 @@ Seo.propTypes = {
   description: PropTypes.string,
   image: PropTypes.string,
   url: PropTypes.string,
-  isNews: PropTypes.bool,
   location: PropTypes.string,
 }
 
