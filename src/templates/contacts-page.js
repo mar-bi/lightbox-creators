@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Hero from '../components/Hero'
-import GoldenLight from '../img/golden-light.jpg'
 
 export const ContactPageTemplate = ({
   title,
@@ -10,12 +9,13 @@ export const ContactPageTemplate = ({
   address,
   phone,
   email,
+  heroImage
 }) => {
 
   return (
     <div>
       <Helmet title={`الفهد | ${title}`} />
-      <Hero image={GoldenLight} size="medium" title={title} layer />
+      <Hero image={heroImage.resize.src} size="medium" title={title} layer />
       <section className="section">
         <div className="container">
           <div className="columns">
@@ -50,10 +50,11 @@ ContactPageTemplate.propTypes = {
   address: PropTypes.string,
   phone: PropTypes.string,
   email: PropTypes.string,
+  heroImage: PropTypes.object
 }
 
 export default ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post, heroImage } = data
 
   return (
     <ContactPageTemplate
@@ -62,6 +63,7 @@ export default ({ data }) => {
       address={post.frontmatter.address}
       phone={post.frontmatter.phone}
       email={post.frontmatter.email}
+      heroImage={heroImage}
     />
   )
 }
@@ -75,6 +77,11 @@ export const contactPageQuery = graphql`
         address
         phone
         email
+      }
+    }
+    heroImage: imageSharp(id: {regex: "/golden-light.jpg/"}){
+      resize(width: 1920){
+        src
       }
     }
   }

@@ -3,15 +3,14 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Content, { HTMLContent } from '../components/Content'
 import Hero from '../components/Hero'
-import Door from '../img/door.jpg'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, content, contentComponent, heroImage }) => {
   const PageContent = contentComponent || Content
 
   return (
     <div>
       <Helmet title={`الفهد | ${title}`} />
-      <Hero image={Door} size="medium" title={title} layer />
+      <Hero image={heroImage.resize.src} size="medium" title={title} layer />
       <section className="section section--gradient">
         <div className="container">
           <div className="columns">
@@ -38,6 +37,7 @@ export default ({ data }) => {
       contentComponent={HTMLContent}
       title={post.frontmatter.title}
       content={post.html}
+      heroImage={data.heroImage}
     />
   )
 }
@@ -50,10 +50,16 @@ export const aboutPageQuery = graphql`
         title
       }
     }
+    heroImage: imageSharp(id: {regex: "/door.jpg/"}){
+      resize(width: 1920){
+        src
+      }
+    }
   }
 `
 AboutPageTemplate.propTypes = {
   title: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
+  heroImage: PropTypes.object
 }

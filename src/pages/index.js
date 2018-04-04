@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import kebabCase from 'lodash/kebabCase'
 import Hero from '../components/Hero'
-import CityNight from '../img/city-night.jpg'
 
 export default class IndexPage extends React.Component {
   render() {
@@ -17,7 +16,7 @@ export default class IndexPage extends React.Component {
 
     return (
       <div>
-        <Hero image={CityNight} size="large" title={company} layer main />
+        <Hero image={data.heroImage.resize.src} size="large" title={company} layer main />
         <section className="section">
           <div className="container">
             <div className="columns">
@@ -116,6 +115,11 @@ export default class IndexPage extends React.Component {
 
 export const pageQuery = graphql`
   query IndexQuery {
+    heroImage: imageSharp(id: {regex: "/city-night.jpg/"}){
+      resize(width: 1920){
+        src
+      }
+    }
     dataJson(type: { eq: "company" }) {
       companyNameEn
     }

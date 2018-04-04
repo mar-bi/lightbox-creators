@@ -14,7 +14,6 @@ const Seo = ({ title, description, image, url, isNews, location }) => {
     seoImage = image,
     seoUrl = url
 
-
   return (
     <Helmet defaultTitle={seoTitle}>
       <html lang="ar"/>
@@ -49,7 +48,7 @@ const TemplateWrapper = ({ children, data, location }) => {
       <Seo 
         title={data.site.siteMetadata.title}
         description={data.site.siteMetadata.description}
-        image={data.site.siteMetadata.image}
+        image={data.image.resize.src}
         url={data.site.siteMetadata.url}
         isNews={isNews}
         loaction={location.pathname}
@@ -110,5 +109,10 @@ export const query = graphql`
       twitter
       instagram
     }
+    image: imageSharp(id: {regex: "/site-preview.jpg/"}){
+      resize(width: 400){
+        src
+      }
+    }   
   }
 `
