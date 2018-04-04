@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
 import Content, { HTMLContent } from '../components/Content'
 import Hero from '../components/Hero'
 import Door from '../img/door.jpg'
@@ -9,6 +10,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
   return (
     <div>
+      <Helmet title={`الفهد | ${title}`} />
       <Hero image={Door} size="medium" title={title} layer />
       <section className="section section--gradient">
         <div className="container">

@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
 import Hero from '../components/Hero'
 import GoldenLight from '../img/golden-light.jpg'
 
@@ -10,8 +11,10 @@ export const ContactPageTemplate = ({
   phone,
   email,
 }) => {
+
   return (
     <div>
+      <Helmet title={`الفهد | ${title}`} />
       <Hero image={GoldenLight} size="medium" title={title} layer />
       <section className="section">
         <div className="container">

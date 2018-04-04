@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
 import Hero from '../components/Hero'
 import Testimonials from '../components/Testimonials'
 import ImageGrid from '../components/ImageGrid'
@@ -15,6 +16,7 @@ export const ProductPageTemplate = ({
   testimonials,
 }) => (
   <div>
+    <Helmet title={`الفهد | ${title}`} />
     <Hero image={image} size="medium" title={title} layer />
     <section>
       <div className="container">
