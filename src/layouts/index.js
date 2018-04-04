@@ -100,7 +100,7 @@ export const query = graphql`
       instagram
     }
     image: imageSharp(id: { regex: "/site-preview.jpg/" }) {
-      resize(width: 400) {
+      resize(width: 800) {
         src
       }
     }
