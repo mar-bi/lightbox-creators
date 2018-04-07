@@ -3,10 +3,7 @@ templateKey: product-page
 title: واجهات
 image: /img/car-service1.jpg
 heading: 'ADACFM,SDM,CVNDSM,CV,MSDV,SDMVN,MSVNM,CSVNXC,'
-description: >-
-  علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال المفتونون بنشوة اللحظة الهائمون في 
-  رغباتهم فلا يدركون ما يعقبها من الألم والأسي المحتم، واللوم كذلك يشمل هؤلاء 
-  الذين أخفقوا في واجباتهم.
+description: WDFDEFDSFSDFSDFSFSDFSF.
 intro:
   examples:
     - image: /img/tiles1.jpg
