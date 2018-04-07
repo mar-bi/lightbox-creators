@@ -1,9 +1,9 @@
 ---
-templateKey: 'contacts-page'
-path: /contacts
+templateKey: contacts-page
 title: اتصل بنا
 image: /img/sample-map.png
-address: جمهورية مصر العربيه القاهرة
-phone: (+2) 010038110617
-email: "elfahddecoration@yahoo.com"
+address: 'الفرع الرئيسى : جمهورية مصر العربيه - الجيزة - هضبة الاهرام '
+phone: (+2) 010038110617 - (+2) 0112814456
+email: elfahddecoration@yahoo.com
 ---
+
