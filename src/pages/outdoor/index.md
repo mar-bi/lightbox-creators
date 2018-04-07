@@ -2,8 +2,8 @@
 templateKey: product-page
 title: واجهات
 image: /img/car-service1.jpg
-heading: 'ADACFM,SDM,CVNDSM,CV,MSDV,SDMVN,MSVNM,CSVNXC,'
-description: WDFDEFDSFSDFSDFSFSDFSF.
+heading: 'واجه كلادينج  لمحطة بنزين . '
+description: 'تم انجاز عمل الكلادينج لمحطة البنزين '
 intro:
   examples:
     - image: /img/tiles1.jpg
