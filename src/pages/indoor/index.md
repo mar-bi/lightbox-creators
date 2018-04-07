@@ -1,60 +1,62 @@
 ---
-templateKey: 'product-page'
-path: /indoor
+templateKey: product-page
 title: تشطيبات
 image: /img/chair.jpg
-heading: الألم الذي ربما تنجم عنه بعض
-description: >-
-  علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال المفتونون بنشوة اللحظة الهائمون في 
-  رغباتهم فلا يدركون ما يعقبها من الألم والأسي المحتم، واللوم كذلك يشمل هؤلاء 
-  الذين أخفقوا في واجباتهم.
+heading: hasjdasjhjdshfjdshfjdshfjsfdsjfhjsdhfjsdhfjsdfh
+description: sabdnsabdnsabdnsabddeuyewureiwruoewuroewir.
 intro:
   examples:
     - image: /img/indoor31.jpg
-      text: >
+      text: |
         علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
     - image: /img/indoor30.jpg
-      text: >
+      text: |
         علي
     - image: /img/indoor29.jpg
-      text: >
+      text: |
         علي
     - image: /img/indoor28.jpg
-      text: >
+      text: |
         علي
     - image: /img/indoor27.jpg
-      text: >
+      text: |
         علي
     - image: /img/indoor26.jpg
-      text: >
+      text: |
         علي
-    
 projects:
   - heading: مام الأمور ويخ
     description: >
-      المغلوطة حول استنكار  النشوة وتمجيد الألم نشأت بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤ.
+      المغلوطة حول استنكار  النشوة وتمجيد الألم نشأت بالفعل، وسأعرض لك التفاصيل
+      لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب
+      الشعور بالسعادة، ولكن بفضل هؤ.
     images:
-    - image: /img/car-service1.jpg 
-    - image: /img/car-service2.jpg
-    - image: /img/car-service3.jpg
-    - image: /img/car-service4.jpg
-    - image: /img/car-service5.jpg
-      
+      - image: /img/car-service1.jpg
+      - image: /img/car-service2.jpg
+      - image: /img/car-service3.jpg
+      - image: /img/car-service4.jpg
+      - image: /img/car-service5.jpg
   - heading: مام الأمور ويخ
     description: >
-      المغلوطة حول استنكار  النشوة وتمجيد الألم نشأت بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤ.
+      المغلوطة حول استنكار  النشوة وتمجيد الألم نشأت بالفعل، وسأعرض لك التفاصيل
+      لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب
+      الشعور بالسعادة، ولكن بفضل هؤ.
     images:
-    - image: /img/car-service1.jpg 
-    - image: /img/car-service2.jpg
-    - image: /img/car-service3.jpg
-    - image: /img/car-service4.jpg
-    - image: /img/car-service5.jpg
-
+      - image: /img/car-service1.jpg
+      - image: /img/car-service2.jpg
+      - image: /img/car-service3.jpg
+      - image: /img/car-service4.jpg
+      - image: /img/car-service5.jpg
 testimonials:
   - author: محمد احمد
     quote: >-
-      ينا الألم. في بعض الأحيان ونظراً للالتزامات التي يفرضها علينا الواجب والعمل سنتنازل غالباً ونرفض الشعور
+      ينا الألم. في بعض الأحيان ونظراً للالتزامات التي يفرضها علينا الواجب
+      والعمل سنتنازل غالباً ونرفض الشعور
   - author: محمد عمرو
     quote: >-
-      م فيتساوي مع هؤلاء الذين يتجنبون وينأون عن تحمل الكدح والألم . من المفترض أن نفرق بين هذه الحالات بكل سهولة ومرونة. في ذاك الوقت عندما تكون قدرتنا علي الاختيار غير مقيدة بشرط وعندما لا نجد ما يمنعنا أن نفعل الأفضل فها نحن نرحب بالسرور والسعادة ونتجنب كل ما يبعث إلينا الألم.
+      م فيتساوي مع هؤلاء الذين يتجنبون وينأون عن تحمل الكدح والألم . من المفترض
+      أن نفرق بين هذه الحالات بكل سهولة ومرونة. في ذاك الوقت عندما تكون قدرتنا
+      علي الاختيار غير مقيدة بشرط وعندما لا نجد ما يمنعنا أن نفعل الأفضل فها نحن
+      نرحب بالسرور والسعادة ونتجنب كل ما يبعث إلينا الألم.
 ---
+
