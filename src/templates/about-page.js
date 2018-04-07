@@ -10,14 +10,14 @@ export const AboutPageTemplate = ({
   contentComponent,
   heroImage,
   path,
-  url
+  url,
 }) => {
   const PageContent = contentComponent || Content
 
   return (
     <div>
       <Helmet title={`الفهد | ${title}`}>
-        <link rel="canonical" href={`${url}${path}`}/>
+        <link rel="canonical" href={`${url}${path}`} />
       </Helmet>
       <Hero image={heroImage.resize.src} size="medium" title={title} layer />
       <section className="section section--gradient">
@@ -79,5 +79,5 @@ AboutPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
   heroImage: PropTypes.object,
   path: PropTypes.string,
-  url: PropTypes.string
+  url: PropTypes.string,
 }

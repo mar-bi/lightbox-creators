@@ -11,12 +11,12 @@ export const ContactPageTemplate = ({
   email,
   heroImage,
   path,
-  url
+  url,
 }) => {
   return (
     <div>
       <Helmet title={`الفهد | ${title}`}>
-        <link rel="canonical" href={`${url}${path}`}/>
+        <link rel="canonical" href={`${url}${path}`} />
       </Helmet>
       <Hero image={heroImage.resize.src} size="medium" title={title} layer />
       <section className="section">
@@ -55,7 +55,7 @@ ContactPageTemplate.propTypes = {
   email: PropTypes.string,
   heroImage: PropTypes.object,
   path: PropTypes.string,
-  url: PropTypes.string
+  url: PropTypes.string,
 }
 
 export default ({ data, location }) => {

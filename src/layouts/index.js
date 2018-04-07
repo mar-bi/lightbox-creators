@@ -43,7 +43,7 @@ const TemplateWrapper = ({ children, data }) => {
     <div>
       <Seo
         title={data.site.siteMetadata.title}
-        description={data.dataJson.description}
+        description={data.site.siteMetadata.description}
         image={data.image.resize.src}
         url={data.site.siteMetadata.url}
       />
@@ -78,6 +78,7 @@ export const query = graphql`
       siteMetadata {
         title
         url
+        description
         navLinks {
           path
           name
@@ -90,7 +91,6 @@ export const query = graphql`
     }
     dataJson(type: { eq: "company" }) {
       companyName
-      description
       address
       email
       phone

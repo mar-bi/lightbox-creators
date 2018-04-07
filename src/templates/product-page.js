@@ -15,11 +15,11 @@ export const ProductPageTemplate = ({
   projects,
   testimonials,
   path,
-  url
+  url,
 }) => (
   <div>
     <Helmet title={`الفهد | ${title}`}>
-      <link rel="canonical" href={`${url}${path}`}/>
+      <link rel="canonical" href={`${url}${path}`} />
     </Helmet>
     <Hero image={image} size="medium" title={title} layer />
     <section>
@@ -111,5 +111,5 @@ ProductPageTemplate.propTypes = {
   projects: PropTypes.array,
   testimonials: PropTypes.array,
   path: PropTypes.string,
-  url: PropTypes.string
+  url: PropTypes.string,
 }
