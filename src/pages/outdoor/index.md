@@ -8,7 +8,7 @@ intro:
   examples:
     - image: /img/tiles1.jpg
       text: |
-        علي الجانب الآخر نشجب ونستنكر
+        واجه حجر هشمة 
     - image: /img/tiles2.jpg
       text: |
         الآخر نشجب ونستنكر هؤلاء الرجال
