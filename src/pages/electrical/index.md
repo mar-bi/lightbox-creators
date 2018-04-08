@@ -3,26 +3,21 @@ templateKey: product-page
 title: اعمال كهرباء
 image: /img/open-lightbox.jpg
 heading: الألم الذي ربما تنجم عنه بعض
-description: '...اتنفيذ اعمال الكهرباء بدقة و احدث تقنيات '
+description: '.تنفيذ اعمال الكهرباء بدقة و احدث التقنيات '
 intro:
   examples:
-    - image: /img/car-service1.jpg
-      text: |
-        علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
-    - image: /img/car-service2.jpg
-      text: |
-        علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
-    - image: /img/car-service3.jpg
-      text: |
-        علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
-    - image: /img/car-service4.jpg
-      text: |
-        علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
-    - image: /img/car-service5.jpg
-      text: |
-        علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
+    - image: ''
+      text: ..........................................
+    - image: ''
+      text: ........................
+    - image: ''
+      text: ............................
+    - image: ''
+      text: ...............................
+    - image: ''
+      text: ...............................
 projects:
-  - heading: مام الأمور ويخ
+  - heading: يييييييييييييييييييييييييييي
     description: .......................................................
     images:
       - image: ''
