@@ -2,7 +2,7 @@
 templateKey: product-page
 title: تشطيبات
 image: /img/chair.jpg
-heading: hasjdasjhjdshfjdshfjdshfjsfdsjfhjsdhfjsdhfjsdfh
+heading: hasjdasjhjdshfjdshfjdshfjsfdsjfhjsdhfjsdhf
 description: sabdnsabdnsabdnsabddeuyewureiwruoewuroewir.
 intro:
   examples:
