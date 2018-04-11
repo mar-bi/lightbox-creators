@@ -1,23 +1,23 @@
 ---
 templateKey: product-page
 title: واجهات
-image: /img/car-service1.jpg
+image: /img/car-service2.jpg
 heading: 'عنوان الصورة '
 description: 'شرح الصورة '
 intro:
   examples:
-    - image: /img/tiles1.jpg
+    - image: /img/car-service4.jpg
       text: |
         واجه حجر هشمة 
-    - image: /img/tiles2.jpg
+    - image: /img/car-service3.jpg
       text: |
         شرح الصورة 
-    - image: /img/tiles3.jpg
+    - image: /img/car-service5.jpg
       text: |
         شرح الصورة 
-    - image: /img/tiles4.jpg
+    - image: /img/outdoor15.jpg
       text: 'شرح الصورة '
-    - image: /img/tiles5.jpg
+    - image: /img/outdoor1.jpg
       text: |
         شرح الصورة 
 projects:
