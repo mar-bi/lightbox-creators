@@ -1,77 +1,63 @@
 ---
-templateKey: 'product-page'
-path: /outdoor
+templateKey: product-page
 title: واجهات
-image: /img/house.jpg
-heading: الألم الذي ربما تنجم عنه بعض
-description: >-
-  علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال المفتونون بنشوة اللحظة الهائمون في 
-  رغباتهم فلا يدركون ما يعقبها من الألم والأسي المحتم، واللوم كذلك يشمل هؤلاء 
-  الذين أخفقوا في واجباتهم.
+image: /img/car-service2.jpg
+heading: 'عنوان الصورة '
+description: 'شرح الصورة '
 intro:
   examples:
-    - image: /img/tiles1.jpg
-      text: >
-        علي الجانب الآخر نشجب ونستنكر
-    - image: /img/tiles2.jpg
-      text: >
-        الآخر نشجب ونستنكر هؤلاء الرجال
-    - image: /img/tiles3.jpg
-      text: >
-        نشجب ونستنكر هؤلاء الرجال
-    - image: /img/tiles4.jpg
-      text: >
-        علي الجانب نشجب ونستنكر
-    - image: /img/tiles5.jpg
-      text: >
-        هؤلاء الرجال
-
+    - image: /img/car-service4.jpg
+      text: |
+        واجه حجر هشمة 
+    - image: /img/car-service3.jpg
+      text: |
+        شرح الصورة 
+    - image: /img/car-service5.jpg
+      text: |
+        شرح الصورة 
+    - image: /img/outdoor15.jpg
+      text: 'شرح الصورة '
+    - image: /img/outdoor1.jpg
+      text: |
+        شرح الصورة 
 projects:
-  - heading: مام الأمور ويخ
-    description: >
-      المغلوطة حول استنكار  النشوة وتمجيد الألم نشأت بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤ.
+  - heading: 'احدث المشروعات '
+    description: 'شرح الصورة '
     images:
-    - image: /img/car-service1.jpg 
-      text: >
-        علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
-    - image: /img/car-service2.jpg
-      text: >
-        علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
-    - image: /img/car-service3.jpg
-      text: >
-        علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
-    - image: /img/car-service4.jpg
-      text: >
-        علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
-    - image: /img/car-service5.jpg
-      text: >
-        علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
-      
+      - image: /img/car-service1.jpg
+        text: |
+          شرح الصورة 
+      - image: /img/car-service2.jpg
+        text: |
+          شرح الصورة 
+      - image: /img/car-service3.jpg
+        text: |
+          شرح الصورة 
+      - image: /img/car-service4.jpg
+        text: |
+          شرح الصورة 
+      - image: /img/car-service5.jpg
+        text: |
+          شرح الصورة 
   - heading: مام الأمور ويخ
-    description: >
-      المغلوطة حول استنكار  النشوة وتمجيد الألم نشأت بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤ.
+    description: 'شرح الصورة '
     images:
-    - image: /img/car-service1.jpg 
-      text: >
-        علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
-    - image: /img/car-service2.jpg
-      text: >
-        علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
-    - image: /img/car-service3.jpg
-      text: >
-        علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
-    - image: /img/car-service4.jpg
-      text: >
-        علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
-    - image: /img/car-service5.jpg
-      text: >
-        علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
-
+      - image: /img/car-service1.jpg
+        text: |
+          شرح الصورة 
+      - image: /img/car-service2.jpg
+        text: |
+          شرح الصورة 
+      - image: /img/car-service3.jpg
+        text: 'شرح الصورة '
+      - image: /img/car-service4.jpg
+        text: 'شرح الصورة '
+      - image: /img/car-service5.jpg
+        text: 'شرح الصورة '
 testimonials:
   - author: محمد احمد
-    quote: >-
-      ينا الألم. في بعض الأحيان ونظراً للالتزامات التي يفرضها علينا الواجب والعمل سنتنازل غالباً ونرفض الشعور
+    quote: 'راى العملاء '
   - author: محمد عمرو
-    quote: >-
-      م فيتساوي مع هؤلاء الذين يتجنبون وينأون عن تحمل الكدح والألم . من المفترض أن نفرق بين هذه الحالات بكل سهولة ومرونة. في ذاك الوقت عندما تكون قدرتنا علي الاختيار غير مقيدة بشرط وعندما لا نجد ما يمنعنا أن نفعل الأفضل فها نحن نرحب بالسرور والسعادة ونتجنب كل ما يبعث إلينا الألم.
+    quote: 'راى العملاء '
 ---
+
