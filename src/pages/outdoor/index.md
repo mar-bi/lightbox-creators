@@ -20,6 +20,49 @@ intro:
     - image: /img/outdoor1.jpg
       text: |
         شرح الصورة 
+    - image: /img/tiles1.jpg
+    - image: /img/outdoor5.jpg
+    - image: /img/outdoor8.jpg
+    - image: /img/outdoor9.jpg
+    - image: /img/tiles5.jpg
+    - image: /img/img-20180222-wa0001.jpg
+    - image: /img/img-20180313-wa0023.jpg
+    - image: /img/img-20180220-wa0003.jpg
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
 projects:
   - heading: 'احدث المشروعات '
     description: 'شرح الصورة '
