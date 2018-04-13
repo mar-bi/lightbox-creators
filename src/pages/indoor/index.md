@@ -1,7 +1,7 @@
 ---
 templateKey: product-page
 title: تشطيبات
-image: /img/chair.jpg
+image: /img/indoor3.jpg
 heading: hasjdasjhjdshfjdshfjdshfjsfdsjfhjsdhfjsdhf
 description: sabdnsabdnsabdnsabddeuyewureiwruoewuroewir.
 intro:
@@ -10,8 +10,8 @@ intro:
       text: |
         علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال.
     - image: /img/indoor30.jpg
-      text: |
-        علي
+      text: |+
+
     - image: /img/indoor29.jpg
       text: |
         علي
@@ -24,6 +24,66 @@ intro:
     - image: /img/indoor26.jpg
       text: |
         علي
+    - image: /img/20160111_120607.jpg
+    - image: /img/indoor10.jpg
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
 projects:
   - heading: مام الأمور ويخ
     description: >
