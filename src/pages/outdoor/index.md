@@ -82,25 +82,24 @@ projects:
       - image: /img/car-service5.jpg
         text: |
           شرح الصورة 
-  - heading: مام الأمور ويخ
-    description: 'شرح الصورة '
+  - heading: ''
+    description: ''
     images:
       - image: /img/car-service1.jpg
-        text: |
-          شرح الصورة 
+        text: |+
+
       - image: /img/car-service2.jpg
-        text: |
-          شرح الصورة 
+        text: ''
       - image: /img/car-service3.jpg
-        text: 'شرح الصورة '
+        text: ''
       - image: /img/car-service4.jpg
-        text: 'شرح الصورة '
+        text: ''
       - image: /img/car-service5.jpg
-        text: 'شرح الصورة '
+        text: ''
 testimonials:
-  - author: محمد احمد
-    quote: 'راى العملاء '
-  - author: محمد عمرو
-    quote: 'راى العملاء '
+  - author: ''
+    quote: ''
+  - author: ''
+    quote: ''
 ---
 
