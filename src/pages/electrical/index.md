@@ -2,7 +2,7 @@
 templateKey: product-page
 title: اعمال كهرباء
 image: /img/open-lightbox.jpg
-heading: الألم الذي ربما تنجم عنه بعض
+heading: ....................
 description: '.تنفيذ اعمال الكهرباء بدقة و احدث التقنيات '
 intro:
   examples:
@@ -19,7 +19,7 @@ intro:
     - image: ''
       text: ...............................
 projects:
-  - heading: يييييييييييييييييييييييييييي
+  - heading: ''
     description: .......................................................
     images:
       - image: ''
@@ -46,9 +46,9 @@ projects:
         text: |
           ..........................
 testimonials:
-  - author: 'اكتب اسمه و رقم تليفونه '
-    quote: 'اكتب راى كريم فى الشغل '
-  - author: 'اكتب اسمه و رقم تليفونه '
-    quote: 'اكتب راى حاتم فى الشغل '
+  - author: ''
+    quote: ''
+  - author: ''
+    quote: ''
 ---
 
