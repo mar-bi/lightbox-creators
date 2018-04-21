@@ -93,11 +93,8 @@ projects:
       - image: /img/car-service3.jpg
       - image: /img/car-service4.jpg
       - image: /img/car-service5.jpg
-  - heading: مام الأمور ويخ
-    description: >
-      المغلوطة حول استنكار  النشوة وتمجيد الألم نشأت بالفعل، وسأعرض لك التفاصيل
-      لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب
-      الشعور بالسعادة، ولكن بفضل هؤ.
+  - heading: ................
+    description: .............................................
     images:
       - image: /img/car-service1.jpg
       - image: /img/car-service2.jpg
