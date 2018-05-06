@@ -6,13 +6,13 @@ heading: ....................
 description: '.تنفيذ اعمال الكهرباء بدقة و احدث التقنيات '
 intro:
   examples:
-    - image: ''
+    - image: /img/car-service2.jpg
       text: >-
         حط صور شغل الكهرباء اللى عند حاتم و كريم و شغل الجيبسن بورد و شغل
         الديكورات 
-    - image: ''
+    - image: /img/car-service1.jpg
       text: ........................
-    - image: ''
+    - image: /img/car-service3.jpg
       text: 'ما تنساش بعد كل تعديل تضغط على كلمة (publish ) علشان تسييف '
     - image: ''
       text: 'فى التشطيبات حط الشغل اللى عند حاتم و كريم '
