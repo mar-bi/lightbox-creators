@@ -1,7 +1,6 @@
 ---
 templateKey: product-page
 title: اعمال كهرباء
-image: /img/open-lightbox.jpg
 heading: ....................
 description: '.تنفيذ اعمال الكهرباء بدقة و احدث التقنيات '
 intro:

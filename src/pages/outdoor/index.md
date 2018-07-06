@@ -1,7 +1,6 @@
 ---
 templateKey: product-page
 title: واجهات
-image: /img/house.jpg
 heading: 'عنوان الصورة '
 description: 'شرح الصورة '
 intro:

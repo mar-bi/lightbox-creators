@@ -51,11 +51,10 @@ export const ProductPageTemplate = ({
 
 export default ({ data, location }) => {
   const { frontmatter } = data.markdownRemark
-  const { url } = data
+  const { url, heroImage } = data
 
   return (
     <ProductPageTemplate
-      image={frontmatter.image}
       title={frontmatter.title}
       heading={frontmatter.heading}
       description={frontmatter.description}
@@ -64,16 +63,16 @@ export default ({ data, location }) => {
       testimonials={frontmatter.testimonials}
       path={location.pathname}
       url={url.siteMetadata.url}
+      image={heroImage.resize.src}
     />
   )
 }
 
 export const productPageQuery = graphql`
-  query ProductPage($id: String!) {
+  query ProductPage($id: String!, $slug: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        image
         heading
         description
         intro {
@@ -98,6 +97,11 @@ export const productPageQuery = graphql`
     url: site {
       siteMetadata {
         url
+      }
+    }
+    heroImage: imageSharp(id: { regex: $slug }) {
+      resize(width: 1920) {
+        src
       }
     }
   }

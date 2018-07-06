@@ -1,7 +1,6 @@
 ---
 templateKey: product-page
 title: تشطيبات
-image: /img/indoor3.jpg
 heading: ............................
 description: ........................................
 intro:

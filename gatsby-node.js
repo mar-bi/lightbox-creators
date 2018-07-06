@@ -34,14 +34,17 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
     markdownFiles.forEach(edge => {
       const id = edge.node.id
+      const slug = edge.node.fields.slug
+
       createPage({
-        path: edge.node.fields.slug,
+        path: slug,
         component: path.resolve(
           `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
         ),
         // additional data can be passed via context
         context: {
           id,
+          slug
         },
       })
     })
