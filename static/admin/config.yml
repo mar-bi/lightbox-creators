@@ -28,6 +28,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
+          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
           - {label: "Body", name: "body", widget: "markdown"}
 
       - file: "src/pages/contacts/index.md"
@@ -51,7 +52,6 @@ collections:
           - {label: Description, name: description, widget: string}
           - {label: Intro, name: intro, widget: object, fields: [{label: Examples, name: examples, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
           - {label: Projects, name: projects, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Images, name: images, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
 
       - file: "src/pages/indoor/index.md"
         label: "Indoor Page"
@@ -63,7 +63,6 @@ collections:
           - {label: Description, name: description, widget: string}
           - {label: Intro, name: intro, widget: object, fields: [{label: Examples, name: examples, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
           - {label: Projects, name: projects, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Images, name: images, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
 
       - file: "src/pages/outdoor/index.md"
         label: "Outdoor Page"
@@ -75,7 +74,6 @@ collections:
           - {label: Description, name: description, widget: string}
           - {label: Intro, name: intro, widget: object, fields: [{label: Examples, name: examples, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
           - {label: Projects, name: projects, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Images, name: images, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
 
   - name: "other-data"
     label: "Other Data"

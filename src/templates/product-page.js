@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Hero from '../components/Hero'
-import Testimonials from '../components/Testimonials'
 import ImageGrid from '../components/ImageGrid'
 import Projects from '../components/Projects'
 
@@ -13,7 +12,6 @@ export const ProductPageTemplate = ({
   description,
   intro,
   projects,
-  testimonials,
   path,
   url,
 }) => (
@@ -39,7 +37,6 @@ export const ProductPageTemplate = ({
 
                 <ImageGrid gridItems={intro.examples || []} />
                 <Projects items={projects || []} />
-                <Testimonials testimonials={testimonials} />
               </div>
             </div>
           </div>
@@ -60,7 +57,6 @@ export default ({ data, location }) => {
       description={frontmatter.description}
       intro={frontmatter.intro}
       projects={frontmatter.projects}
-      testimonials={frontmatter.testimonials}
       path={location.pathname}
       url={url.siteMetadata.url}
       image={heroImage.resize.src}
@@ -88,10 +84,6 @@ export const productPageQuery = graphql`
             image
           }
         }
-        testimonials {
-          author
-          quote
-        }
       }
     }
     url: site {
@@ -113,7 +105,6 @@ ProductPageTemplate.propTypes = {
   description: PropTypes.string,
   intro: PropTypes.object,
   projects: PropTypes.array,
-  testimonials: PropTypes.array,
   path: PropTypes.string,
   url: PropTypes.string,
 }
