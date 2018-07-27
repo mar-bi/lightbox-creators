@@ -27,41 +27,6 @@ intro:
     - image: /img/img-20180222-wa0001.jpg
     - image: /img/img-20180313-wa0023.jpg
     - image: /img/img-20180220-wa0003.jpg
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
-    - {}
 projects:
   - heading: 'احدث المشروعات '
     description: 'شرح الصورة '
@@ -95,10 +60,5 @@ projects:
         text: ''
       - image: /img/car-service5.jpg
         text: ''
-testimonials:
-  - author: ''
-    quote: ''
-  - author: ''
-    quote: ''
 ---
 

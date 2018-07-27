@@ -6,8 +6,8 @@ const Testimonials = ({ testimonials }) => (
     {testimonials.map((testimonial, index) => (
       <article className="message" key={`test-${index}`} dir="rtl">
         <div className="message-body">
-          <p className="is-size-4">{testimonial.quote}</p>
-          <cite className="has-text-weight-bold is-size-4">
+          <p className="is-size-3">{testimonial.quote}</p>
+          <cite className="has-text-weight-bold is-size-3">
             {' '}
             – {testimonial.author}
           </cite>

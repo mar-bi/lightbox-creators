@@ -44,10 +44,5 @@ projects:
       - image: ''
         text: |
           ..........................
-testimonials:
-  - author: ''
-    quote: ''
-  - author: ''
-    quote: ''
 ---
 
