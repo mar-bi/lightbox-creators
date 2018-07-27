@@ -22,7 +22,7 @@ const ImageGrid = ({ gridItems }) => {
             <img
               id={item.image}
               src={item.image}
-              alt="project-photo"
+              alt={item.text}
               className="grid-img"
               onClick={showImage}
             />

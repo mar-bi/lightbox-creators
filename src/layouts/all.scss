@@ -211,7 +211,11 @@ html {
     list-style-type: -moz-arabic-indic !important;
   }
   p {
-    font-size: 1.5em;
+    font-size: 1.25em;
+    margin-bottom: 0.5em !important;
+  }
+  h3 {
+    color: $tangerine !important;
   }
 }
 
