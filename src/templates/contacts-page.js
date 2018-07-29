@@ -9,7 +9,7 @@ export const ContactPageTemplate = ({
   address,
   phone,
   email,
-  heroImage,
+  imageSizes,
   path,
   url,
 }) => {
@@ -18,7 +18,7 @@ export const ContactPageTemplate = ({
       <Helmet title={`الفهد | ${title}`}>
         <link rel="canonical" href={`${url}${path}`} />
       </Helmet>
-      <Hero image={heroImage.resize.src} size="medium" title={title} layer />
+      <Hero image={imageSizes} size="medium" title={title} layer />
       <section className="section">
         <div className="container">
           <div className="columns">
@@ -53,7 +53,7 @@ ContactPageTemplate.propTypes = {
   address: PropTypes.string,
   phone: PropTypes.string,
   email: PropTypes.string,
-  heroImage: PropTypes.object,
+  imageSizes: PropTypes.object,
   path: PropTypes.string,
   url: PropTypes.string,
 }
@@ -68,7 +68,7 @@ export default ({ data, location }) => {
       address={post.frontmatter.address}
       phone={post.frontmatter.phone}
       email={post.frontmatter.email}
-      heroImage={heroImage}
+      imageSizes={heroImage.sizes}
       path={location.pathname}
       url={url.siteMetadata.url}
     />
@@ -87,8 +87,10 @@ export const contactPageQuery = graphql`
       }
     }
     heroImage: imageSharp(id: { regex: "/golden-light.jpg/" }) {
-      resize(width: 1920) {
+      sizes(maxWidth: 1152, quality: 45) {
         src
+        srcSet
+        sizes
       }
     }
     url: site {

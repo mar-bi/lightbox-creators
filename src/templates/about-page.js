@@ -10,7 +10,7 @@ export const AboutPageTemplate = ({
   testimonials,
   content,
   contentComponent,
-  heroImage,
+  imageSizes,
   path,
   url,
 }) => {
@@ -21,7 +21,7 @@ export const AboutPageTemplate = ({
       <Helmet title={`الفهد | ${title}`}>
         <link rel="canonical" href={`${url}${path}`} />
       </Helmet>
-      <Hero image={heroImage.resize.src} size="medium" title={title} layer />
+      <Hero image={imageSizes} size="medium" title={title} layer />
       <section className="section section--gradient section-about">
         <div className="container">
           <div className="columns">
@@ -50,7 +50,7 @@ export default ({ data, location }) => {
       title={post.frontmatter.title}
       testimonials={post.frontmatter.testimonials}
       content={post.html}
-      heroImage={data.heroImage}
+      imageSizes={data.heroImage.sizes}
       path={location.pathname}
       url={url.siteMetadata.url}
     />
@@ -70,8 +70,10 @@ export const aboutPageQuery = graphql`
       }
     }
     heroImage: imageSharp(id: { regex: "/door.jpg/" }) {
-      resize(width: 1920) {
+      sizes(maxWidth: 1152, quality: 45) {
         src
+        srcSet
+        sizes
       }
     }
     url: site {
@@ -86,7 +88,7 @@ AboutPageTemplate.propTypes = {
   testimonials: PropTypes.array,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
-  heroImage: PropTypes.object,
+  imageSizes: PropTypes.object,
   path: PropTypes.string,
   url: PropTypes.string,
 }

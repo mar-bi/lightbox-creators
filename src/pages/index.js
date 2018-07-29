@@ -17,7 +17,7 @@ export default class IndexPage extends React.Component {
     return (
       <div>
         <Hero
-          image={data.heroImage.resize.src}
+          image={data.heroImage.sizes}
           size="large"
           title={company}
           layer
@@ -122,8 +122,10 @@ export default class IndexPage extends React.Component {
 export const pageQuery = graphql`
   query IndexQuery {
     heroImage: imageSharp(id: { regex: "/city-night.jpg/" }) {
-      resize(width: 1920) {
+      sizes(maxWidth: 1152, quality: 45) {
         src
+        srcSet
+        sizes
       }
     }
     dataJson(type: { eq: "company" }) {

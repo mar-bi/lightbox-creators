@@ -1,5 +1,5 @@
 @import "~bulma/sass/utilities/initial-variables";
-@import url('https://fonts.googleapis.com/css?family=Lateef|Lobster');
+@import url("https://fonts.googleapis.com/css?family=Lateef|Lobster");
 
 //own initial variables
 $palegold: #c0b283;
@@ -7,7 +7,6 @@ $silk: #dcd0c0;
 $paper: #f4f4f4;
 $charcoal: #373737;
 $tangerine: #e37222;
-
 
 // the derived variables
 $primary: $palegold;
@@ -17,7 +16,7 @@ $danger: $tangerine;
 $dark: $charcoal;
 $link: $tangerine;
 $footer-background-color: $charcoal;
-$body-family: 'Lateef', cursive;
+$body-family: "Lateef", cursive;
 $body-size: 16px;
 $body-color: $charcoal;
 $section-padding: 2rem 1.5rem;
@@ -54,7 +53,7 @@ html {
 }
 
 .margin-top-0 {
-  margin-top: 0 !important; 
+  margin-top: 0 !important;
 }
 
 .has-padding {
@@ -71,7 +70,7 @@ html {
   }
   & > div > a {
     border-top-right-radius: 0;
-    border-bottom-right-radius: 0; 
+    border-bottom-right-radius: 0;
   }
 }
 
@@ -90,21 +89,23 @@ html {
   @media screen and (max-width: 768px) {
     border-left: none;
     border-bottom: 1px dotted lighten($charcoal, 15%);
-  }  
+  }
 }
+
+// Footer
 
 .footer {
   padding: 1.5rem !important;
 }
 
 .footer-menu {
-  display:flex;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: flex-start; 
+  align-items: flex-start;
   max-height: 100px;
   @media screen and (max-width: 768px) {
-    align-items: center; 
+    align-items: center;
   }
 }
 
@@ -120,7 +121,6 @@ html {
     @media screen and (min-width: 769px) and (max-width: 840px) {
       padding: 0.5rem !important;
     }
-
   }
   @media screen and (min-width: 769px) and (max-width: 840px) {
     font-size: 1.125rem;
@@ -156,15 +156,46 @@ html {
   }
 }
 
+// Hero
+
+.page-hero {
+  height: 300px;
+  @media screen and (min-width: 769px) and (max-width: 1023px) {
+    height: 400px;
+  }
+  @media screen and (min-width: 1024px) {
+    height: 500px;
+  }
+}
+
+.hero-background {
+  height: 100% !important;
+  object-fit: cover;
+}
+
 .hero-text-container {
-  display: inline-block;
+  max-width: 50%;
+  position: absolute;
+  right: 10%;
+  top: calc(300px / 2 - 84px / 2);
   padding: 1.5rem 1rem;
-  background-color: rgba(220, 108, 28,.55);
+  background-color: rgba(220, 108, 28, 0.55);
   border-radius: 4px;
+  @media screen and (min-width: 769px) and (max-width: 1023px) {
+    top: calc(400px / 2 - 84px / 2);
+  }
+  @media screen and (min-width: 1024px) {
+    top: calc(500px / 2 - 84px / 2);
+  }
+}
+
+.hero-title {
+  display: inline-block !important;
+  vertical-align: top;
 }
 
 .en-title {
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   text-transform: capitalize;
   font-weight: 400 !important;
 }
@@ -172,6 +203,8 @@ html {
 .eng-field {
   font-family: "Helvetica", "Arial", sans-serif;
 }
+
+// ImageGrid
 
 .grid-img-container {
   display: flex;
@@ -188,12 +221,11 @@ html {
   border-radius: 4px;
   @media screen and (min-width: 500px) and (max-width: 768px) {
     max-width: 75%;
-  }  
+  }
   @media screen and (max-width: 768px) {
     height: auto;
   }
 }
-
 
 .blog-container {
   padding: 1.5rem !important;
@@ -206,7 +238,7 @@ html {
   }
   ol {
     margin-right: 2rem;
-    margin-left: 1rem !important; 
+    margin-left: 1rem !important;
     list-style-type: arabic-indic !important;
     list-style-type: -moz-arabic-indic !important;
   }
@@ -243,7 +275,7 @@ html {
     li {
       margin-left: 1rem;
     }
-  }  
+  }
 }
 
 .right-ul {
@@ -255,4 +287,4 @@ html {
   margin-top: 1em;
 }
 
-@import "~bulma"
+@import "~bulma";

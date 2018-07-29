@@ -6,7 +6,7 @@ import ImageGrid from '../components/ImageGrid'
 import Projects from '../components/Projects'
 
 export const ProductPageTemplate = ({
-  image,
+  imageSizes,
   title,
   heading,
   description,
@@ -19,7 +19,7 @@ export const ProductPageTemplate = ({
     <Helmet title={`الفهد | ${title}`}>
       <link rel="canonical" href={`${url}${path}`} />
     </Helmet>
-    <Hero image={image} size="medium" title={title} layer />
+    <Hero image={imageSizes} size="medium" title={title} layer />
     <section>
       <div className="container">
         <div className="section">
@@ -59,7 +59,7 @@ export default ({ data, location }) => {
       projects={frontmatter.projects}
       path={location.pathname}
       url={url.siteMetadata.url}
-      image={heroImage.resize.src}
+      imageSizes={heroImage.sizes}
     />
   )
 }
@@ -92,14 +92,16 @@ export const productPageQuery = graphql`
       }
     }
     heroImage: imageSharp(id: { regex: $slug }) {
-      resize(width: 1920) {
+      sizes(maxWidth: 1152, quality: 45) {
         src
+        srcSet
+        sizes
       }
     }
   }
 `
 ProductPageTemplate.propTypes = {
-  image: PropTypes.string,
+  imageSizes: PropTypes.object,
   title: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,

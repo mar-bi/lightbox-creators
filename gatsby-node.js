@@ -44,7 +44,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         // additional data can be passed via context
         context: {
           id,
-          slug
+          slug,
         },
       })
     })
