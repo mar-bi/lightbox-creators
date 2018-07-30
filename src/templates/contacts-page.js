@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import Img from 'gatsby-image'
 import Hero from '../components/Hero'
 
 export const ContactPageTemplate = ({
@@ -34,10 +35,12 @@ export const ContactPageTemplate = ({
                 <h4 className="is-size-6 eng-field">{email}</h4>
               </div>
             </div>
-            <div className="column is-5">
-              <figure className="image is-square">
-                <img src={image} alt="our location" />
-              </figure>
+            <div className="column is-6">
+              <Img
+                sizes={image.sizes}
+                alt="our location on a map"
+                className="map-img"
+              />
             </div>
           </div>
         </div>
@@ -46,25 +49,13 @@ export const ContactPageTemplate = ({
   )
 }
 
-ContactPageTemplate.propTypes = {
-  title: PropTypes.string,
-  contentComponent: PropTypes.string,
-  image: PropTypes.string,
-  address: PropTypes.string,
-  phone: PropTypes.string,
-  email: PropTypes.string,
-  imageSizes: PropTypes.object,
-  path: PropTypes.string,
-  url: PropTypes.string,
-}
-
 export default ({ data, location }) => {
   const { markdownRemark: post, heroImage, url } = data
 
   return (
     <ContactPageTemplate
       title={post.frontmatter.title}
-      image={post.frontmatter.image}
+      image={post.frontmatter.image.childImageSharp}
       address={post.frontmatter.address}
       phone={post.frontmatter.phone}
       email={post.frontmatter.email}
@@ -80,10 +71,16 @@ export const contactPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        image
         address
         phone
         email
+        image {
+          childImageSharp {
+            sizes(maxWidth: 630) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
       }
     }
     heroImage: imageSharp(id: { regex: "/golden-light.jpg/" }) {
@@ -100,3 +97,14 @@ export const contactPageQuery = graphql`
     }
   }
 `
+ContactPageTemplate.propTypes = {
+  title: PropTypes.string,
+  contentComponent: PropTypes.string,
+  image: PropTypes.object,
+  address: PropTypes.string,
+  phone: PropTypes.string,
+  email: PropTypes.string,
+  imageSizes: PropTypes.object,
+  path: PropTypes.string,
+  url: PropTypes.string,
+}

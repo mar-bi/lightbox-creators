@@ -32,7 +32,7 @@ const Hero = ({ image, size, title, layer, main }) => (
 )
 
 Hero.propTypes = {
-  image: PropTypes.string,
+  image: PropTypes.object,
   size: PropTypes.string,
   title: PropTypes.string,
   layer: PropTypes.bool,
