@@ -69,7 +69,7 @@ export const aboutPageQuery = graphql`
         }
       }
     }
-    heroImage: imageSharp(id: { regex: "/door.jpg/" }) {
+    heroImage: imageSharp(id: { regex: "/green-door.jpg/" }) {
       sizes(maxWidth: 1152, quality: 45) {
         src
         srcSet
