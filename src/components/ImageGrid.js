@@ -10,9 +10,9 @@ const ImageGrid = ({ gridItems }) => {
     modal.classList.add('is-active')
   }
   const items = gridItems.sort((a, b) => {
-    if (a.image < b.image){
+    if (a.image < b.image) {
       return -1
-    } else if (a.image > b.image){
+    } else if (a.image > b.image) {
       return 1
     } else {
       return 0
