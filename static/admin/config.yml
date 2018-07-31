@@ -50,8 +50,7 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Examples, name: examples, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Projects, name: projects, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Images, name: images, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
+          - {label: Images, name: images, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}
 
       - file: "src/pages/indoor/index.md"
         label: "Indoor Page"
@@ -61,8 +60,7 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Examples, name: examples, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Projects, name: projects, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Images, name: images, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
+          - {label: Images, name: images, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}
 
       - file: "src/pages/outdoor/index.md"
         label: "Outdoor Page"
@@ -72,8 +70,7 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Examples, name: examples, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Projects, name: projects, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Images, name: images, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
+          - {label: Images, name: images, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}
 
   - name: "other-data"
     label: "Other Data"
