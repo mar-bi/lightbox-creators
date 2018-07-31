@@ -1,48 +1,14 @@
 ---
 templateKey: product-page
 title: اعمال كهرباء
-heading: ....................
-description: '.تنفيذ اعمال الكهرباء بدقة و احدث التقنيات '
-intro:
-  examples:
-    - image: /img/car-service2.jpg
-      text: >-
-        حط صور شغل الكهرباء اللى عند حاتم و كريم و شغل الجيبسن بورد و شغل
-        الديكورات 
-    - image: /img/car-service1.jpg
-      text: ........................
-    - image: /img/car-service3.jpg
-      text: 'ما تنساش بعد كل تعديل تضغط على كلمة (publish ) علشان تسييف '
-    - image: ''
-      text: 'فى التشطيبات حط الشغل اللى عند حاتم و كريم '
-    - image: ''
-      text: ...............................
-projects:
-  - heading: ''
-    description: .......................................................
-    images:
-      - image: ''
-        text: |
-          ..............................
-      - image: ''
-        text: |
-          ..............................
-  - heading: ........................
-    description: ..................................................
-    images:
-      - image: ''
-        text: |
-          .....................................................
-      - image: ''
-        text: |
-          ..........................................
-      - image: ''
-        text: ...............................
-      - image: ''
-        text: |
-          ......................
-      - image: ''
-        text: |
-          ..........................
+heading: 'مشاريعنا'
+description: 'هذه أمثلة على عملنا'
+images:
+  - image: "/img/outdoor-build1-1.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build1-2.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build1-3.jpg"
+    text: "أضف النص"
 ---
 

@@ -1,64 +1,80 @@
 ---
 templateKey: product-page
 title: واجهات
-heading: 'عنوان الصورة '
-description: 'شرح الصورة '
-intro:
-  examples:
-    - image: /img/car-service4.jpg
-      text: |
-        واجه حجر هشمة 
-    - image: /img/car-service3.jpg
-      text: |
-        شرح الصورة 
-    - image: /img/car-service5.jpg
-      text: |
-        شرح الصورة 
-    - image: /img/outdoor15.jpg
-      text: 'شرح الصورة '
-    - image: /img/outdoor1.jpg
-      text: |
-        شرح الصورة 
-    - image: /img/tiles1.jpg
-    - image: /img/outdoor5.jpg
-    - image: /img/outdoor8.jpg
-    - image: /img/outdoor9.jpg
-    - image: /img/tiles5.jpg
-    - image: /img/img-20180222-wa0001.jpg
-    - image: /img/img-20180313-wa0023.jpg
-    - image: /img/img-20180220-wa0003.jpg
-projects:
-  - heading: 'احدث المشروعات '
-    description: 'شرح الصورة '
-    images:
-      - image: /img/car-service1.jpg
-        text: |
-          شرح الصورة 
-      - image: /img/car-service2.jpg
-        text: |
-          شرح الصورة 
-      - image: /img/car-service3.jpg
-        text: |
-          شرح الصورة 
-      - image: /img/car-service4.jpg
-        text: |
-          شرح الصورة 
-      - image: /img/car-service5.jpg
-        text: |
-          شرح الصورة 
-  - heading: ''
-    description: ''
-    images:
-      - image: /img/car-service1.jpg
-        text: |+
-
-      - image: /img/car-service2.jpg
-        text: ''
-      - image: /img/car-service3.jpg
-        text: ''
-      - image: /img/car-service4.jpg
-        text: ''
-      - image: /img/car-service5.jpg
-        text: ''
+heading: 'مشاريعنا'
+description: 'هذه أمثلة على عملنا'
+images:
+  - image: "/img/outdoor-build1-1.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build1-2.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build1-3.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build1-4.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build1-5.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build1-6.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build1-7.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build1-8.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build1-9.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build1-10.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build2-1.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build2-2.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build2-3.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build2-4.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build2-5.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build3-1.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build3-2.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build3-3.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build3-4.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build3-5.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build3-6.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build4-1.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-build4-2.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-karem-1.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-karem-2.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-karem-3.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-karem-4.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-karem-5.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-karem-6.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-karem-7.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-shop1-1.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-shop1-2.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-shop1-3.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-shop1-4.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-shop1-5.jpg"
+    text: "أضف النص"
+  - image: "/img/outdoor-shop1-8.jpg"
+    text: "أضف النص"
 ---
 

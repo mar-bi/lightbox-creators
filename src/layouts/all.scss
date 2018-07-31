@@ -204,33 +204,7 @@ html {
   font-family: "Helvetica", "Arial", sans-serif;
 }
 
-// ImageGrid
-
-.grid-img-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.grid-img {
-  display: block;
-  align-self: center;
-  height: 200px;
-  object-fit: cover !important;
-  margin-bottom: 1em;
-  border-radius: 4px;
-  @media screen and (min-width: 500px) and (max-width: 768px) {
-    max-width: 75%;
-  }
-  @media screen and (max-width: 768px) {
-    height: auto;
-  }
-}
-
-.blog-container {
-  padding: 1.5rem !important;
-}
-
+// User content 
 .user-content {
   ul {
     margin-right: 2rem;
@@ -250,6 +224,42 @@ html {
     color: $tangerine !important;
   }
 }
+
+// ImageGrid
+
+.grid-img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  p.grid-img-caption {
+    margin-bottom: 0 !important;
+  }
+}
+
+.grid-img {
+  display: block;
+  align-self: center;
+  width: 100%;
+  max-width: 300px;
+  height: 185px;
+  object-fit: cover !important;
+  border-radius: 4px;
+  @media screen and (min-width: 500px) and (max-width: 768px) {
+    max-width: 300px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 300px;
+    height: 185px;
+  }
+}
+
+
+.blog-container {
+  padding: 1.5rem !important;
+}
+
+
 
 .article-bcg {
   margin-bottom: 1rem;

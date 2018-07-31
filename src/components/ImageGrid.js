@@ -9,10 +9,19 @@ const ImageGrid = ({ gridItems }) => {
     const modal = document.getElementById(modalId)
     modal.classList.add('is-active')
   }
+  const items = gridItems.sort((a, b) => {
+    if (a.image < b.image){
+      return -1
+    } else if (a.image > b.image){
+      return 1
+    } else {
+      return 0
+    }
+  })
 
   return (
     <div className="columns is-multiline">
-      {gridItems.map(item => (
+      {items.map(item => (
         <div
           key={item.image}
           className="column is-3-desktop is-6-tablet"
@@ -26,7 +35,7 @@ const ImageGrid = ({ gridItems }) => {
               className="grid-img"
               onClick={showImage}
             />
-            <p className="has-text-centered">{item.text}</p>
+            <p className="has-text-centered grid-img-caption">{item.text}</p>
             <ImageModal elemId={`mdl-${item.image}`} image={item.image} />
           </div>
         </div>
