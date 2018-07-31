@@ -1,42 +1,37 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Img from 'gatsby-image'
 import ImageModal from './ImageModal'
 
 const ImageGrid = ({ gridItems }) => {
   const showImage = e => {
-    const targetId = e.target.id
-    const modalId = `mdl-${targetId}`
+    const targetId = e.target.parentNode.parentNode.parentNode.id
+    const modalId = `mod-${targetId}`
     const modal = document.getElementById(modalId)
     modal.classList.add('is-active')
   }
-  const items = gridItems.sort((a, b) => {
-    if (a.image < b.image) {
-      return -1
-    } else if (a.image > b.image) {
-      return 1
-    } else {
-      return 0
-    }
-  })
 
   return (
     <div className="columns is-multiline">
-      {items.map(item => (
+      {gridItems.map(item => (
         <div
-          key={item.image}
+          key={item.image.childImageSharp.sizes.src}
           className="column is-3-desktop is-6-tablet"
           dir="rtl"
         >
           <div className="content grid-img-container">
-            <img
-              id={item.image}
-              src={item.image}
-              alt={item.text}
-              className="grid-img"
-              onClick={showImage}
-            />
+            <div id={item.image.childImageSharp.sizes.src} onClick={showImage}>
+              <Img
+                alt={item.text || ''}
+                sizes={item.image.childImageSharp.sizes}
+                className="grid-img"
+              />
+            </div>
             <p className="has-text-centered grid-img-caption">{item.text}</p>
-            <ImageModal elemId={`mdl-${item.image}`} image={item.image} />
+            <ImageModal
+              elemId={`mod-${item.image.childImageSharp.sizes.src}`}
+              image={item}
+            />
           </div>
         </div>
       ))}

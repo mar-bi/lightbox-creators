@@ -11,6 +11,7 @@ export const ProductPageTemplate = ({
   heading,
   description,
   images,
+  projects,
   path,
   url,
 }) => (
@@ -35,7 +36,7 @@ export const ProductPageTemplate = ({
                 </div>
 
                 <ImageGrid gridItems={images || []} />
-                {/* <Projects items={projects || []} /> */}
+                <Projects items={projects || []} />
               </div>
             </div>
           </div>
@@ -55,6 +56,7 @@ export default ({ data, location }) => {
       heading={frontmatter.heading}
       description={frontmatter.description}
       images={frontmatter.images}
+      projects={frontmatter.projects}
       path={location.pathname}
       url={url.siteMetadata.url}
       imageSizes={heroImage.sizes}
@@ -70,8 +72,26 @@ export const productPageQuery = graphql`
         heading
         description
         images {
-          image
+          image {
+            childImageSharp {
+              sizes(maxWidth: 630) {
+                ...GatsbyImageSharpSizes
+              }
+            }
+          }
           text
+        }
+        projects {
+          title
+          images {
+            image {
+              childImageSharp {
+                sizes(maxWidth: 630) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -95,6 +115,7 @@ ProductPageTemplate.propTypes = {
   heading: PropTypes.string,
   description: PropTypes.string,
   images: PropTypes.array,
+  projects: PropTypes.array,
   path: PropTypes.string,
   url: PropTypes.string,
 }

@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Img from 'gatsby-image'
 
 const ImageModal = ({ elemId, image }) => {
-  const closeModal = e => {
-    const modal = e.target.parentNode
+  const closeModal = () => {
+    const modal = document.getElementById(elemId)
     modal.classList.remove('is-active')
   }
 
@@ -11,9 +12,13 @@ const ImageModal = ({ elemId, image }) => {
     <div id={elemId} className="modal">
       <div className="modal-background" onClick={closeModal} />
       <div className="modal-content">
-        <p className="image">
-          <img src={image} alt="project-image" />
-        </p>
+        <div className="image">
+          <Img
+            alt={image.image.text}
+            sizes={image.image.childImageSharp.sizes}
+            className="modal-img"
+          />
+        </div>
       </div>
       <button
         className="modal-close is-large"
@@ -27,6 +32,6 @@ const ImageModal = ({ elemId, image }) => {
 export default ImageModal
 
 ImageModal.propTypes = {
-  image: PropTypes.string,
+  image: PropTypes.object,
   elemId: PropTypes.string,
 }
