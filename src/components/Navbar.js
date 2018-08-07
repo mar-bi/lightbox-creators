@@ -21,7 +21,7 @@ const Navbar = ({ title, links }) => {
       <div className="container is-widescreen has-bottom-border">
         {/* brand navbar */}
         <div className="navbar-brand" dir="rtl">
-          <Link to="/" className="navbar-item is-size-2-widescreen is-size-3">
+          <Link to="/" className="navbar-item is-size-2-widescreen is-size-3 nav-item">
             {title}
           </Link>
 
@@ -43,7 +43,7 @@ const Navbar = ({ title, links }) => {
             {links.map((link, index) => (
               <Link
                 key={`nav-${index}`}
-                className="navbar-item is-capitalized is-size-4"
+                className="navbar-item is-capitalized is-size-4 nav-item"
                 to={link.path}
                 exact
               >

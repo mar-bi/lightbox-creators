@@ -8,7 +8,7 @@ const FooterNav = ({ links }) => (
   <ul className="footer-menu">
     {links.map((link, index) => (
       <li key={`footer-nav-${index}`} className="footer-menu-item">
-        <Link className="navbar-item is-capitalized" to={link.path} exact>
+        <Link className="navbar-item is-capitalized nav-item" to={link.path} exact>
           {link.name}
         </Link>
       </li>
@@ -40,16 +40,16 @@ const Footer = ({ links, data }) => (
 
         <div className="column is-one-third-tablet">
           <div className="icon-container">
-            <a href={`mailto:${data.email}`}>
+            <a href={`mailto:${data.email}`} aria-label="Email">
               <Icon icon={ICONS.MAIL} viewbox="0 0 28 28" />
             </a>
-            <a href={data.facebook}>
+            <a href={data.facebook} aria-label="Facebook">
               <Icon icon={ICONS.FACEBOOK} size={32} />
             </a>
-            <a href={data.instagram}>
+            <a href={data.instagram} aria-label="Instagram">
               <Icon icon={ICONS.INSTAGRAM} viewbox="0 0 28 28" />
             </a>
-            <a href={data.twitter}>
+            <a href={data.twitter} aria-label="Twitter">
               <Icon icon={ICONS.TWITTER} />
             </a>
           </div>
