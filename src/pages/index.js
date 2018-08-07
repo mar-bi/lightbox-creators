@@ -123,9 +123,7 @@ export const pageQuery = graphql`
   query IndexQuery {
     heroImage: imageSharp(id: { regex: "/city-night.jpg/" }) {
       sizes(maxWidth: 1152, quality: 45) {
-        src
-        srcSet
-        sizes
+        ...GatsbyImageSharpSizes
       }
     }
     dataJson(type: { eq: "company" }) {

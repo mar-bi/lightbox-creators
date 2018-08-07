@@ -14,7 +14,7 @@ const ImageModal = ({ elemId, image }) => {
       <div className="modal-content">
         <div className="image">
           <Img
-            alt={image.image.text}
+            alt=""
             sizes={image.image.childImageSharp.sizes}
             className="modal-img"
           />

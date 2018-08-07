@@ -85,9 +85,7 @@ export const contactPageQuery = graphql`
     }
     heroImage: imageSharp(id: { regex: "/golden-light.jpg/" }) {
       sizes(maxWidth: 1152, quality: 45) {
-        src
-        srcSet
-        sizes
+        ...GatsbyImageSharpSizes
       }
     }
     url: site {

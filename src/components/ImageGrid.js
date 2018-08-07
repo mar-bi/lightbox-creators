@@ -22,12 +22,12 @@ const ImageGrid = ({ gridItems }) => {
           <div className="content grid-img-container">
             <div id={item.image.childImageSharp.sizes.src} onClick={showImage}>
               <Img
-                alt={item.text || ''}
+                alt=""
                 sizes={item.image.childImageSharp.sizes}
                 className="grid-img"
               />
             </div>
-            <p className="has-text-centered grid-img-caption">{item.text}</p>
+            {/* <p className="has-text-centered grid-img-caption">{item.text}</p> */}
             <ImageModal
               elemId={`mod-${item.image.childImageSharp.sizes.src}`}
               image={item}

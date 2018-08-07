@@ -169,8 +169,7 @@ html {
 }
 
 .hero-background {
-  height: 100% !important;
-  object-fit: cover;
+  @extend .page-hero;
 }
 
 .hero-text-container {

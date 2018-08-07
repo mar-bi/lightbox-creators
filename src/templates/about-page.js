@@ -71,9 +71,7 @@ export const aboutPageQuery = graphql`
     }
     heroImage: imageSharp(id: { regex: "/about.jpg/" }) {
       sizes(maxWidth: 1152, quality: 45) {
-        src
-        srcSet
-        sizes
+        ...GatsbyImageSharpSizes
       }
     }
     url: site {
