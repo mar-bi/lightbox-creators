@@ -41,7 +41,7 @@ collections:
           - {label: "Address", name: "address", widget: "string"}
           - {label: "Phone", name: "phone", widget: "string"}
           - {label: "Email", name: "email", widget: "string"}
-          
+
       - file: "src/pages/electrical/index.md"
         label: "Electrical Page"
         name: "electrical"
@@ -50,7 +50,7 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
-          - {label: Images, name: images, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}
+          - {label: Images, name: images, widget: list, fields: [{label: Image, name: image, widget: image}]}
 
       - file: "src/pages/indoor/index.md"
         label: "Indoor Page"
@@ -60,7 +60,7 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
-          - {label: Images, name: images, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}
+          - {label: Images, name: images, widget: list, fields: [{label: Image, name: image, widget: image}]}
 
       - file: "src/pages/outdoor/index.md"
         label: "Outdoor Page"
@@ -70,7 +70,7 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
-          - {label: Images, name: images, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}
+          - {label: Images, name: images, widget: list, fields: [{label: Image, name: image, widget: image}]}
 
   - name: "other-data"
     label: "Other Data"

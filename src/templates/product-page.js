@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Hero from '../components/Hero'
 import ImageGrid from '../components/ImageGrid'
-import Projects from '../components/Projects'
 
 export const ProductPageTemplate = ({
   imageSizes,
@@ -11,7 +10,6 @@ export const ProductPageTemplate = ({
   heading,
   description,
   images,
-  projects,
   path,
   url,
 }) => (
@@ -34,9 +32,7 @@ export const ProductPageTemplate = ({
                     <p>{description}</p>
                   </div>
                 </div>
-
                 <ImageGrid gridItems={images || []} />
-                <Projects items={projects || []} />
               </div>
             </div>
           </div>
@@ -56,7 +52,6 @@ export default ({ data, location }) => {
       heading={frontmatter.heading}
       description={frontmatter.description}
       images={frontmatter.images}
-      projects={frontmatter.projects}
       path={location.pathname}
       url={url.siteMetadata.url}
       imageSizes={heroImage.sizes}
@@ -76,19 +71,6 @@ export const productPageQuery = graphql`
             childImageSharp {
               sizes(maxWidth: 630) {
                 ...GatsbyImageSharpSizes
-              }
-            }
-          }
-          text
-        }
-        projects {
-          title
-          images {
-            image {
-              childImageSharp {
-                sizes(maxWidth: 630) {
-                  ...GatsbyImageSharpSizes
-                }
               }
             }
           }
@@ -115,7 +97,6 @@ ProductPageTemplate.propTypes = {
   heading: PropTypes.string,
   description: PropTypes.string,
   images: PropTypes.array,
-  projects: PropTypes.array,
   path: PropTypes.string,
   url: PropTypes.string,
 }
