@@ -40,5 +40,6 @@ images:
   - image: /img/in-door-2.jpg
   - image: /img/in-door-3.jpg
   - image: /img/20150222_192749.jpg
+  - image: /img/٢٠١٦٠١٢٨_١٣١٧٤٩.jpg
 ---
 
