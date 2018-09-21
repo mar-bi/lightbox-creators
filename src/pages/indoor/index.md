@@ -42,5 +42,7 @@ images:
   - image: /img/20150222_192749.jpg
   - image: /img/٢٠١٦٠١٢٨_١٣١٧٤٩.jpg
   - image: /img/٢٠١٦٠٤٢٦_١٦١٣١٦.jpg
+  - image: /img/20150905_185906.jpg
+  - {}
 ---
 
