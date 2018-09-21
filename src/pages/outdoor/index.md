@@ -42,7 +42,7 @@ images:
   - image: /img/out-shop1-8.jpg
   - image: /img/images.jpg
   - image: /img/224.jpg
-  - {}
-  - {}
+  - image: /img/واجهة-فلة-حجر-و-بروفايل.jpg
+  - image: /img/فيلا-مصممة-من-واجهة-حجر-مع-بروفايل-768x483.jpg
 ---
 
