@@ -40,5 +40,9 @@ images:
   - image: /img/out-shop1-4.jpg
   - image: /img/out-shop1-5.jpg
   - image: /img/out-shop1-8.jpg
+  - image: /img/images.jpg
+  - image: /img/224.jpg
+  - {}
+  - {}
 ---
 
