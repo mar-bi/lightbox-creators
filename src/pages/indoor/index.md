@@ -51,8 +51,7 @@ images:
   - image: /img/fb_img_1452728748227.jpg
   - image: /img/fb_img_1452206315701.jpg
   - image: /img/fb_img_1452761542671.jpg
-  - image: >-
-      /img/image-5913c0f3f7a49c85bec99a9b75bd400afad813a96e1dbe3ca751a6ea88d68eac-v.jpg
+  - image: /img/10402790_674946989298033_5826812542809292302_n.jpg
   - image: /img/fb_img_1452728691881.jpg
   - image: /img/fb_img_1452798698360.jpg
   - image: /img/fb_img_1454178099550.jpg
@@ -75,5 +74,9 @@ images:
   - image: /img/img-20180801-wa0061.jpg
   - image: /img/img-20180822-wa0019.jpg
   - image: /img/11081021_674953409297391_8337431695400336763_n.png
+  - image: /img/11054297_672005056258893_8059437125661347454_n.png
+  - image: /img/1506458_674947609297971_8697136077691045650_n.jpg
+  - image: /img/16601698_1107746152684779_5673145167198459922_o.jpg
+  - image: /img/16427432_1099681986824529_9028151460754519458_n.jpg
 ---
 
