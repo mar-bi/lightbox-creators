@@ -40,7 +40,7 @@ images:
   - image: /img/out-shop1-4.jpg
   - image: /img/out-shop1-5.jpg
   - image: /img/42399750_898852220504181_6934268864540704768_n.jpg
-  - image: ''
+  - image: /img/فيلا-حديثة-بالحجر-و-البروفايل.jpg
   - {}
   - {}
   - {}
