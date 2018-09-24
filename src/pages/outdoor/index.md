@@ -50,6 +50,8 @@ images:
   - image: /img/6-554x365.jpg
   - image: /img/fb_img_1497482059938-800x800.jpg
   - image: /img/e2c3b89f931f65ed3ca5b2fc9e60086e.jpg
+  - image: /img/فيلا-مصممة-من-واجهة-حجر-مع-بروفايل-768x483.jpg
+  - {}
   - {}
   - {}
   - {}
