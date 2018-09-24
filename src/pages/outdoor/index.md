@@ -40,7 +40,7 @@ images:
   - image: /img/out-shop1-4.jpg
   - image: /img/out-shop1-5.jpg
   - image: /img/fb_img_1497482059938-800x800.jpg
-  - image: ''
+  - image: /img/15771989.jpg
   - {}
   - {}
   - {}
