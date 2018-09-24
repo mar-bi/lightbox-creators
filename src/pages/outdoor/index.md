@@ -15,10 +15,10 @@ images:
   - image: /img/out-build1-9.jpg
   - image: /img/out-build1-10.jpg
   - image: /img/out-build2-1.jpg
-  - image: /img/out-build2-2.jpg
-  - image: /img/out-build2-3.jpg
+  - image: ''
+  - image: /img/2013-02-17 10.28.36.jpg
   - image: /img/out-build2-4.jpg
-  - image: /img/out-build2-5.jpg
+  - image: /img/2013-02-17 10.30.17.jpg
   - image: /img/out-build3-1.jpg
   - image: /img/out-build3-2.jpg
   - image: /img/out-build3-3.jpg
