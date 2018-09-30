@@ -47,8 +47,5 @@ images:
   - image: /img/el-out-2.jpg
   - image: /img/el-out-3.jpg
   - image: /img/el-out-4.jpg
-  - image: ''
-  - {}
-  - {}
 ---
 

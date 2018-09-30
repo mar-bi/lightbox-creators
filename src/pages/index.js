@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import kebabCase from 'lodash/kebabCase'
 import Hero from '../components/Hero'
+import ImageGrid from '../components/ImageGrid'
 
 export default class IndexPage extends React.Component {
   render() {
@@ -47,7 +48,7 @@ export default class IndexPage extends React.Component {
                   }}
                 >
                   <h2 className="is-size-3" dir="rtl">
-                    قائمة العلامات
+                    احدث الاخبار
                   </h2>
                   <ul className="tags-list" dir="rtl">
                     {group.map(tag => (
@@ -86,8 +87,9 @@ export default class IndexPage extends React.Component {
                         </small>
                       </p>
                       <div dir="rtl">
+                        <ImageGrid gridItems={post.frontmatter.images.slice(0, 4) || []} />
                         <p className="is-size-4">
-                          {post.frontmatter.description}
+                          {post.excerpt}
                         </p>
                         <div className="tags">
                           {post.frontmatter.tags.map((elem, index) => (
@@ -133,6 +135,7 @@ export const pageQuery = graphql`
       edges {
         node {
           id
+          excerpt
           fields {
             slug
           }
@@ -140,8 +143,16 @@ export const pageQuery = graphql`
             title
             templateKey
             date
-            description
             tags
+            images {
+              image {
+                childImageSharp {
+                  sizes(maxWidth: 630) {
+                    ...GatsbyImageSharpSizes
+                  }
+                }
+              }
+            }
           }
         }
       }

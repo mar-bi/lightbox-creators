@@ -3,14 +3,15 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
+import ImageGrid from '../components/ImageGrid'
 
 export const BlogPostTemplate = ({
   content,
   contentComponent,
-  description,
   title,
   helmet,
   tags,
+  images
 }) => {
   const PostContent = contentComponent || Content
 
@@ -37,7 +38,7 @@ export const BlogPostTemplate = ({
                 </Link>
               ))}
             </div>
-            <p dir="rtl">{description}</p>
+            <ImageGrid gridItems={images || []} />
             <PostContent className="user-content" content={content} />
           </div>
         </div>
@@ -53,10 +54,10 @@ export default props => {
     <BlogPostTemplate
       content={post.html}
       contentComponent={HTMLContent}
-      description={post.frontmatter.description}
       helmet={<Helmet title={`الأخبار | ${post.frontmatter.title}`} />}
       title={post.frontmatter.title}
       tags={post.frontmatter.tags}
+      images={post.frontmatter.images}
     />
   )
 }
@@ -69,8 +70,16 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
-        description
         tags
+        images {
+          image {
+            childImageSharp {
+              sizes(maxWidth: 630) {
+                ...GatsbyImageSharpSizes
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -79,8 +88,8 @@ export const pageQuery = graphql`
 BlogPostTemplate.propTypes = {
   content: PropTypes.string,
   contentComponent: PropTypes.func,
-  description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
   tags: PropTypes.array,
+  images: PropTypes.array,
 }
