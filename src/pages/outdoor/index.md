@@ -30,10 +30,10 @@ images:
   - image: /img/out-karem-5.jpg
   - image: /img/out-karem-6.jpg
   - image: /img/out-karem-7.jpg
-  - image: /img/out-shop1-1.jpg
-  - image: /img/out-shop1-2.jpg
-  - image: /img/out-shop1-3.jpg
-  - image: /img/out-shop1-4.jpg
+  - image: ''
+  - image: ''
+  - image: ''
+  - image: ''
   - image: /img/out-shop1-5.jpg
 ---
 
