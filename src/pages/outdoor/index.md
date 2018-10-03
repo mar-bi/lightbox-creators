@@ -14,7 +14,7 @@ images:
   - image: /img/out-build1-8.jpg
   - image: /img/out-build1-9.jpg
   - image: /img/out-build1-10.jpg
-  - image: /img/out-build2-1.jpg
+  - image: ''
   - image: /img/out-build3-1.jpg
   - image: /img/out-build3-2.jpg
   - image: /img/out-build3-3.jpg
@@ -30,10 +30,5 @@ images:
   - image: /img/out-karem-5.jpg
   - image: /img/out-karem-6.jpg
   - image: /img/out-karem-7.jpg
-  - image: ''
-  - image: ''
-  - image: ''
-  - image: ''
-  - image: /img/out-shop1-5.jpg
 ---
 
