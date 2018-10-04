@@ -40,9 +40,10 @@ images:
   - image: /img/1 (9).jpg
   - image: /img/1 (10).jpg
   - image: /img/1 (11).jpg
-  - {}
-  - {}
-  - {}
-  - {}
+  - image: /img/1 (12).jpg
+  - image: /img/1 (13).jpg
+  - image: /img/1 (14).jpg
+  - image: /img/1 (15).jpg
+  - image: /img/1 (16).jpg
 ---
 
