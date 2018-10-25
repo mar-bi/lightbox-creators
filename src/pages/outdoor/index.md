@@ -4,11 +4,11 @@ title: واجهات
 heading: مشاريعنا
 description: هذه أمثلة على عملنا
 images:
-  - image: /img/out-build1-1.jpg
-  - image: /img/out-build1-2.jpg
-  - image: /img/out-build1-3.jpg
-  - image: /img/out-build1-4.jpg
-  - image: /img/out-build1-5.jpg
+  - image: ''
+  - image: ''
+  - image: ''
+  - image: ''
+  - image: ''
   - image: /img/out-build1-6.jpg
   - image: /img/out-build1-7.jpg
   - image: /img/out-build1-8.jpg
