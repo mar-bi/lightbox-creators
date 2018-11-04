@@ -35,7 +35,6 @@ images:
   - image: /img/10402790_674946989298033_5826812542809292302_n.jpg
   - image: /img/img-20180920-wa0016.jpg
   - image: /img/in-floor2-1.jpg
-  - image: /img/img-20181025-wa0009.jpg
   - image: /img/20150905_185906.jpg
   - image: /img/16601698_1107746152684779_5673145167198459922_o.jpg
 ---
