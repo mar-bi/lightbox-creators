@@ -5,8 +5,6 @@ heading: مشاريعنا
 description: نحن نعمل مع بلاط السيراميك ، الأرضيات ، المطبخ والحمام.
 images:
   - image: /img/img-20180801-wa0026.jpg
-  - image: >-
-      /img/image-5913c0f3f7a49c85bec99a9b75bd400afad813a96e1dbe3ca751a6ea88d68eac-v.jpg
   - image: /img/fb_img_1452894538505.jpg
   - image: /img/img-20180920-wa0025.jpg
   - image: /img/fb_img_1452728851430.jpg
@@ -15,7 +13,6 @@ images:
   - image: /img/fb_img_1452206315701.jpg
   - image: /img/fb_img_1452728674215.jpg
   - image: /img/fb_img_1452798698360.jpg
-  - image: /img/fb_img_1452757381729.jpg
   - image: /img/fb_img_1452728623041.jpg
   - image: /img/fb_img_1452728600045.jpg
   - image: /img/fb_img_1452720775536.jpg
